@@ -1,0 +1,4 @@
+#	Using a key lookup on a encoded name 
+#	TYP=$(cat "${TRANSFORMED_JSON}" | jq -r '.tests.test[]  | select( .name | @uri | . as $nam | $nam == '$i') | .type ')
+#	MSG=$(cat "${TRANSFORMED_JSON}" | jq -r '.tests.test[]  | select( .name | @uri | . as $nam | $nam == '$i') | .message."$cd"')
+
