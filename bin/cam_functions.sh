@@ -68,6 +68,8 @@
 	}
 
 	function resolve_server() {
+		validate_config_path
+		local TARGET_FILE_NAME="${FILE_NAME_PATH}/${SERVER_NAME}.server"
 		get_existing_server
 		export SERVER_ID=${RET_VAL}
 
@@ -75,7 +77,7 @@
 			create_new_server
 			export SERVER_ID=$RET_VAL
 		else
-			export SERVER_URL=$(cat ${SERVER_NAME}.server | jq -r ".[] | select(.name == \"${SERVER_NAME}\") | .address")
+			export SERVER_URL=$(cat ${TARGET_FILE_NAME} | jq -r ".[] | select(.name == \"${SERVER_NAME}\") | .address")
 
 		fi
 
@@ -418,7 +420,8 @@
 			REPORT_FILE_NAME="${REPORT_FOLDER_NAME}/${PROJECT_ORIG}-${TSTAMP_DEFAULT}.xml"
 			REPORT_COVERAGE_NAME="${REPORT_COVERAGE_FOLDER}/${PROJECT_ORIG}-${TSTAMP_DEFAULT}.data"
 		else
-			REPORT_COVERAGE_NAME="${REPORT_COVERAGE_FOLDER}/${REPORT_FILE_NAME:0:-4}.data"
+			SZE=$(expr ${#REPORT_FILE_NAME} - 4)
+			REPORT_COVERAGE_NAME="${REPORT_COVERAGE_FOLDER}/${REPORT_FILE_NAME:0:${SZE}}.data"
 			REPORT_FILE_NAME="${REPORT_FOLDER_NAME}/${REPORT_FILE_NAME}"
 		fi
 		SESSION_TAG=$(urlencode "${SESSION_TAG}")
@@ -455,8 +458,9 @@
 	#TODO: convert hardcoded vars to arguments
 	#TODO: Add validation for the generated report
 	function get_coverage() {
-		echo PROJECT=${PROJECT}>"${REPORT_FILE_NAME:0:-4}".coverage.settings
-		echo BUILD_ID=${BUILD_ID}>>"${REPORT_FILE_NAME:0:-4}".coverage.settings
+		SZE=$(expr ${#REPORT_FILE_NAME} - 4)
+		echo PROJECT=${PROJECT}>"${REPORT_FILE_NAME:0:${SZE}}".coverage.settings
+		echo BUILD_ID=${BUILD_ID}>>"${REPORT_FILE_NAME:0:${SZE}}".coverage.settings
 		curl -X GET --header 'Accept: application/octet-stream' "http://${CAM_URL}/cam/api/v1/sessions/${SESSION_ID}/coverage" 2>/dev/null >"${REPORT_COVERAGE_NAME}"
 	}
 

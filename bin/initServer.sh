@@ -60,10 +60,9 @@ do
 	    shift # past value
 	    ;;
 	    -d|--defaults|-defaults)
-		echo FILE_NAME=server_env.properties	
-		echo SERVER_URL=localhost:8050
-		echo SERVER_NAME=S1
-		echo CAM_URL=localhost:8070
+		echo SERVER_URL=${SERVER_URL}
+		echo SERVER_NAME=${SERVER_NAME}
+		echo CAM_URL=${CAM_URL}
 		exit 0
 	    ;;
 	    -h|--help|-help)

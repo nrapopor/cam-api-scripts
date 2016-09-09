@@ -13,7 +13,8 @@ if [ -z "${CAM_ENV}" ]; then
 	export DTP_UPLOAD_DEFAULT=false
 	export REPORT_FOLDER_NAME_DEFAULT=./reports
 	export TSTAMP_DEFAULT=$(date +%Y%m%d-%H%M%S-%3N)
-	export FORMATTED_DATE=${TSTAMP_DEFAULT:0:-4}
+	export SZE=$(expr ${#TSTAMP_DEFAULT} - 5)
+	export FORMATTED_DATE=${TSTAMP_DEFAULT:0:${SZE}}
 	export SESSION_NAME_DEFAULT=Session-${FORMATTED_DATE}
 	export STATIC_COVERAGE_XML_DEFAULT=./static_coverage.xml
 	export TEST_NAME_DEFAULT=Test-${TSTAMP_DEFAULT}
