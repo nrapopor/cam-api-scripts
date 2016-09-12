@@ -69,13 +69,50 @@
 		echo processing  ${TOTAL_TEST_CNT} tests
 	}
 
-	function clean_up_source() {
+	function clean_up_api_source() {
 		if [ -z "${DEBUG_PARSE}" ]; then
 			rm "${TRANSFORMED_XML}"
 			rm "${TRANSFORMED_JSON}"
 			rm "${TEMP_JSON_FILE}"
 		fi
 	}
+	function clean_up_transform_source() {
+		if [ -z "${DEBUG_PARSE}" ]; then
+			rm "${TRANSFORMED_XML}"
+			rm "${TRANSFORMED_JSON}"
+		fi
+	}
 	#  Regression Functions  
+	function parse_regression_source() {
+		#xsltproc -o report-o.xml rspec_api.xsl ../automation_report_samples/api/report.xml
+		for i in $(ls -1 ${TESTNG_PATH}/TEST*.xml); do
+			FNAME_BASE="$(base_name \"$i\")"
+			CURR_FILE_TSTAMP=$(date +%Y%m%d-%H%M%S-%3N)		
+			TRANSFORMED_XML=/tmp/${FNAME_BASE}.${CURR_FILE_TSTAMP}.xml
+			TRANSFORMED_JSON=/tmp/${FNAME_BASE}.${CURR_FILE_TSTAMP}.json
+
+			xsltproc -o "${TRANSFORMED_XML}" "${0%/*}/testng_results.xsl" "$i"
+			#cat "${TRANSFORMED_XML}"
+			print_settings ${SCRIPT_TYPE} echo "processed xml"
+
+			xml2json < "${TRANSFORMED_XML}" > "${TRANSFORMED_JSON}"
+			#cat "${TRANSFORMED_JSON}"
+			print_settings ${SCRIPT_TYPE} echo "processed json"
+			local TST_COUNT=$(cat "${TRANSFORMED_JSON}" | jq -c '.testsuite.tests ')
+			print_settings ${SCRIPT_TYPE} echo "TST_COUNT=${TST_COUNT}"
+
+			if [ ${TST_COUNT} == '"1"' ]; then
+				cat "${TRANSFORMED_JSON}" | jq -c -r '.testsuite | .test '  >> ${TEMP_JSON_FILE}
+			else
+				cat "${TRANSFORMED_JSON}" | jq -c '.testsuite.test[] | . ' >> ${TEMP_JSON_FILE}
+			fi
+			clean_up_transform_source			
+		done
+		export TOTAL_TEST_CNT=$(cat ${TEMP_JSON_FILE} | wc -l )
+		print_settings ${SCRIPT_TYPE} cat ${TEMP_JSON_FILE}
+		echo processing ${TOTAL_TEST_CNT} tests
+	}
+
+
 	#  Smoke Functions	     
 #fi

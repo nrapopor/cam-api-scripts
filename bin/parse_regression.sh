@@ -18,12 +18,12 @@ do
 	#echo key=$key
 
 	case $key in
-	    -f=*|--inputFile=*)
-	    API_FILE_NAME="${key#*=}"
+	    -f=*|--input=*)
+	    TESTNG_PATH="${key#*=}"
 	    shift # past argument=value
 	    ;;
-	    -f|--inputFile)
-	    API_FILE_NAME="$2"
+	    -f|--input)
+	    TESTNG_PATH="$2"
 	    shift # past argument
 	    shift # past value
 	    ;;
@@ -168,9 +168,8 @@ do
 	esac
 done
 
-required_parameter input "${API_FILE_NAME}"
+required_parameter input "${TESTNG_PATH}"
 required_parameter project "${PROJECT}"
-
 
 # Initialize the Server Connection and a session on CAM 
 # the parameters should be set already
@@ -181,39 +180,41 @@ ${0%/*}/initSession.sh
 #print_settings ${SCRIPT_TYPE} 
 echo "session initialized"
 IFS=$'\n'
-export TRANSFORMED_XML=/tmp/${TSTAMP_DEFAULT}.api.tests.xml
-export TRANSFORMED_JSON=/tmp/${TSTAMP_DEFAULT}.api.tests.json
 export TEMP_JSON_FILE=/tmp/hold.${TSTAMP_DEFAULT}.json
 
-
-parse_api_source
+parse_regression_source
 
 IFS=$'\n'
 # Parse the values from the single test's JSON
+SKIPPED_TESTS=0
 for i in $( cat ${TEMP_JSON_FILE}); do 
-	STAT=$(echo $i | jq ' .status | @sh ')
-	NAME_IN=$(echo $i | jq ' .name | @sh')
-	# Adding a separator since I'll be appending time to the end of the name to force uniqueness
-	NAME="${NAME_IN:1:-1}"~
-	MSG=$(echo $i | jq ' .message."$cd" | @sh')
 	TYP="$(echo $i | jq -r ' .type | @sh')"
-	TIME="$(echo $i | jq -r ' .time ')"
+	if [ "$TYP" == "'SKIPPED'" ] || [ "$TYP" == "SKIPPED" ]; then
+		SKIPPED_TESTS=$(expr ${SKIPPED_TESTS} + 1)
+	else
+		STAT=$(echo $i | jq ' .status | @sh ')
+		NAME_IN=$(echo $i | jq ' .name | @sh')
+		# Adding a separator since I'll be appending time to the end of the name to force uniqueness
+		NAME="${NAME_IN:1:-1}"~
+		MSG=$(echo $i | jq ' .message."$cd" | @sh')
+		TIME="$(echo $i | jq -r ' .time ')"
 
-	print_settings ${SCRIPT_TYPE} echo "NAME_IN=${NAME_IN}"	
-	print_settings ${SCRIPT_TYPE} echo "NAME=${NAME}"	
-	print_settings ${SCRIPT_TYPE} echo "status: $STAT typ: $TYP TIME: $TIME MSG: $MSG Name: $NAME"
+		print_settings ${SCRIPT_TYPE} echo "NAME_IN=${NAME_IN}"	
+		print_settings ${SCRIPT_TYPE} echo "NAME=${NAME}"	
+		print_settings ${SCRIPT_TYPE} echo "status: $STAT typ: $TYP TIME: $TIME MSG: $MSG Name: $NAME"
 
-	#  Create the test 
-	. ${0%/*}/addTest.sh -n "${NAME}"time:${TIME} 
-	# Update the test 
-	#Author is not passed: the default value of UID will be used
-	. ${0%/*}/updateTest.sh -n "${NAME}"time:${TIME} -r "${TYP}" -m "$MSG" -s $STAT
-	#print number of tests processed so far
-	calculate_cnt
+		#  Create the test 
+		. ${0%/*}/addTest.sh -n "${NAME}"time:${TIME} 
+		# Update the test 
+		#Author is not passed: the default value of UID will be used
+		. ${0%/*}/updateTest.sh -n "${NAME}"time:${TIME} -r "${TYP}" -m "$MSG" -s $STAT
+		#print number of tests processed so far
+		calculate_cnt
+	fi
 done
 #print the total number of tests
 #TODO: Add count comparison to the expected total to make sure that all expected tests were processed
-echo "$CNT tests processed" 
+echo "${CNT} processed, and ${SKIPPED_TESTS} skipped. for the total of $(expr ${CNT} + ${SKIPPED_TESTS}) tests" 
 
 # the parameters should be set already
 # Arguments are not needed since we are exporting the variables ...
@@ -226,7 +227,10 @@ ${0%/*}/closeSession.sh
 #you can add the removeClosedSessions again to clean up this session ... It's there as a debug reference 
 
 #clean up intermediate source files (unless DEBUG_PARSE is set) 
-clean_up_api_source 
+if [ -z "${DEBUG_PARSE}" ]; then
+	rm "${TEMP_JSON_FILE}"
+fi
+ 
 
 
 

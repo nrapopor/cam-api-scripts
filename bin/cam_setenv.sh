@@ -16,7 +16,7 @@ if [ -z "${CAM_ENV}" ]; then
 	export SZE=$(expr ${#TSTAMP_DEFAULT} - 5)
 	export FORMATTED_DATE=${TSTAMP_DEFAULT:0:${SZE}}
 	export SESSION_NAME_DEFAULT=Session-${FORMATTED_DATE}
-	export STATIC_COVERAGE_XML_DEFAULT=./static_coverage.xml
+	export STATIC_COVERAGE_XML_DEFAULT=./examples/RSpecResults/static_coverage.xml
 	export TEST_NAME_DEFAULT=Test-${TSTAMP_DEFAULT}
 	export AUTHOR_DEFAULT=$(id -u -n)
 	export DEFAULT_SESSION_TAG="CAM Generated Report"

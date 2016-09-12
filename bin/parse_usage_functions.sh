@@ -9,7 +9,7 @@
 	# Usage documentation functions for the Rspec API parser and related support functions
 
 	function common_usage() {
-		/bin/echo -e usage:\\t${SCRIPT_NAME}\\t\{-f\[=\]\|--inputFile\[=\]\} \<$1\> \{-P\[=\]\|--project\[=\]\} \<DTP project\> 
+		/bin/echo -e usage:\\t${SCRIPT_NAME}\\t\{-f\[=\]\|--input\[=\]\} \<$1\> \{-P\[=\]\|--project\[=\]\} \<DTP project\> 
 		/bin/echo -e \\t\\t\\t\[\{-c\[=\]\|--config\[=\]\} \<server properties\>\] \[\{-N\[=\]\|--serverName\[=\]\} \<server name\>\] 
 		/bin/echo -e \\t\\t\\t\[\{-u\[=\]\|--url\[=\]\} \<server url\>\] \[\{-a\[=\]\|--agent\[=\]\|--agent-url\[=\]\} \<CAM url\>\] 
 		/bin/echo -e \\t\\t\\t\[\{-n\[=\]\|--name\[=\]\} \<report name\>\] \[\{-r\[=\]\|--reportFolder\[=\]\} \<report folder\>\] 

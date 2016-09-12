@@ -17,6 +17,11 @@
 		echo "${BASEPATH}"
 	}
 
+	function base_name() {
+		local FNAME_FULL=$(basename "$1")
+		local SZE=$(expr ${#FNAME_FULL} - 5)
+		echo "${FNAME_FULL:0:${SZE}}"
+	}
 
 	function urlencode() {
 	    # urlencode <string>
