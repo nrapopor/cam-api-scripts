@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Edit Cost Account" skipped="4" tests="5" time="0.041581">
+<testcase classname="Edit Cost Account" name="add description" time="0.030206">
+  <failure message="failed add description" type="failed">
+    <![CDATA[Scenario: add description
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Cost Accounts 2 page
+And on Cost Accounts 2 page I click on I want to use Cost Accounts
+And on Cost Accounts 2 page I add new Cost Account
+And on Cost Accounts 2 page I select newly created Cost Account
+When on Cost Accounts 2 page I click Edit link
+And on Edit Cost Accounts 2 page I enter description some new description
+And on Edit Cost Accounts 2 page I click update
+Then Cost Account 2 description is edited correctly some new description
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/cost_accounts/edit_cost_account_2.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Edit Cost Account" name="Edit description" time="0.003223">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Edit Cost Account" name="set Cost Account to default on Edit page" time="0.002511">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Edit Cost Account" name="change Cost Account status on Edit page" time="0.002128">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Edit Cost Account" name="change Cost Account status on Cost Accounts page" time="0.003513">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

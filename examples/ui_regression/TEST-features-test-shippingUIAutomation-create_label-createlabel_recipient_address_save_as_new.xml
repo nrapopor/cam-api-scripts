@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Edit address from address book and Save as new recipient address." skipped="6" tests="7" time="0.049544">
+<testcase classname="Edit address from address book and Save as new recipient address." name="Edit full name and save as new address (outline example : | Will Smith | Full Name | Dan shuber |)" time="0.003223">
+  <failure message="failed Edit full name and save as new address (outline example : | Will Smith | Full Name | Dan shuber |)" type="failed">
+    <![CDATA[Scenario Outline: Edit full name and save as new address
+
+Example row: | Will Smith | Full Name | Dan shuber |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/createlabel_recipient_address_save_as_new.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Edit address from address book and Save as new recipient address." name="Edit email and save as new address (outline example : | John Mclaine | Emma Watson | Email | Horizon_John@pb.com |)" time="0.032984">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Edit address from address book and Save as new recipient address." name="Edit company name and city save as new address (outline example : | Manya Surve | Jennifer Aniston | Company | Microsoft |)" time="0.002606">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Edit address from address book and Save as new recipient address." name="Edit company name and city save as new address (outline example : | Hugh Jackman | Ellen Page | City | Danbury |)" time="0.002647">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Edit address from address book and Save as new recipient address." name="Edit street or zip code and save as new address (outline example : | Matt Damon | Kristen Stewart | Address1 | 19 King St |)" time="0.002980">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Edit address from address book and Save as new recipient address." name="Edit street or zip code and save as new address (outline example : | Irfan Khan | Godzilla | State | CA |)" time="0.002525">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Edit address from address book and Save as new recipient address." name="Edit street or zip code and save as new address (outline example : | Super Man | Spider Man | Zip Code | 06484-4035 |)" time="0.002579">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

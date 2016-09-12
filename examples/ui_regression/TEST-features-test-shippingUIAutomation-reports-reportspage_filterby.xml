@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Filter Reports and verify" skipped="36" tests="37" time="0.062915">
+<testcase classname="Filter Reports and verify" name="Select Report Criteria - Recent (outline example : | Recent | All Transactions |  |  |  |)" time="0.001579">
+  <failure message="failed Select Report Criteria - Recent (outline example : | Recent | All Transactions |  |  |  |)" type="failed">
+    <![CDATA[Scenario Outline: Select Report Criteria - Recent
+
+Example row: | Recent | All Transactions |  |  |  |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/reports/reportspage_filterby.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Select Report Criteria - Today (outline example : | Today |)" time="0.001046">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Select Report Criteria - Last Week (outline example : | Last Week |)" time="0.000926">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Select Report Criteria - Last month (outline example : | Last month |)" time="0.001199">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Select Report Criteria - Today (outline example : | Today |)" time="0.000724">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Select Report Criteria - Last month (outline example : | Last month |)" time="0.000731">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Select Report Criteria - Last Week (outline example : | Last Week |)" time="0.000690">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Select Report Criteria - Recent (outline example : | Recent |)" time="0.000773">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Select Report Criteria - All Shipments (outline example : | All Shipments |)" time="0.001157">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | Default | Default |)" time="0.001457">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | Date | asc |)" time="0.001167">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | Recipient | asc |)" time="0.001239">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | Carrier | asc |)" time="0.001108">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | Status | asc |)" time="0.001076">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | Amount | asc |)" time="0.001137">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | User | asc |)" time="0.001064">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | Date | desc |)" time="0.001216">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | Recipient | desc |)" time="0.001193">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | Carrier | desc |)" time="0.001101">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | Status | desc |)" time="0.001125">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | Amount | desc |)" time="0.031912">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="All Shipments report - Column Sorting (outline example : | User | desc |)" time="0.001465">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | Default | Default |)" time="0.000706">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | Date | asc |)" time="0.000452">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | Recipient | asc |)" time="0.000353">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | Carrier | asc |)" time="0.000388">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | Status | asc |)" time="0.000337">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | Amount | asc |)" time="0.000371">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | User | asc |)" time="0.000352">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | Date | desc |)" time="0.000349">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | Recipient | desc |)" time="0.000347">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | Carrier | desc |)" time="0.000506">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | Status | desc |)" time="0.000374">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | Amount | desc |)" time="0.000371">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipments Eligible Refund report - Column Sorting (outline example : | User | desc |)" time="0.000357">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipment Summary by Cost Account report - Column Sorting (outline example : | Cost Account | asc |)" time="0.001470">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Filter Reports and verify" name="Shipment Summary by Cost Account report - Column Sorting (outline example : | Cost Account | desc |)" time="0.001097">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

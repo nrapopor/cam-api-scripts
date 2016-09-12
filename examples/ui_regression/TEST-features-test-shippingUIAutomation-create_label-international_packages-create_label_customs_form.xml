@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Select package type." skipped="8" tests="9" time="0.053086">
+<testcase classname="Select package type." name="Print international label with customs (outline example : | 3 | 0 | Gifts | item1 |  | NOEEI 30.36 - Shipments destined to Canada |  |)" time="0.001148">
+  <failure message="failed Print international label with customs (outline example : | 3 | 0 | Gifts | item1 |  | NOEEI 30.36 - Shipments destined to Canada |  |)" type="failed">
+    <![CDATA[Scenario Outline: Print international label with customs
+
+Example row: | 3 | 0 | Gifts | item1 |  | NOEEI 30.36 - Shipments destined to Canada |  |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/international_packages/create_label_customs_form.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Print international label with customs (outline example : | 3 | 0 | Commercial Sample | item1 | 123456 | NOEEI 30.37(h) - Authorized shipment of gift parcels or humanitarian donations |  |)" time="0.001295">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Print international label with customs (outline example : | 3 | 0 | Documents | item1 |  | NOEEI 30.37(a) - Value of each class of goods is $2,500 or less |  |)" time="0.001199">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Print international label with customs (outline example : | 3 | 0 | Merchandise | item1 |  | No exemption, specify ITN | AESDOWN 123456778 02/25/2015 |)" time="0.001174">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Print international label with customs (outline example : | 3 | 0 | Returned Goods | item1 |  | Other exemptions, please specify | NOEEI 30.2d |)" time="0.001156">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Print international label with customs" time="0.036613">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Add 3 items to customs" time="0.003860">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Edit item" time="0.003252">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Delete item" time="0.003389">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

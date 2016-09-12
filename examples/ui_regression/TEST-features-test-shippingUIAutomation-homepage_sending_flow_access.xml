@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Select package type to navigate to sending flow." skipped="3" tests="4" time="0.042766">
+<testcase classname="Select package type to navigate to sending flow." name="Validate Priority Mail Boxes to initiate sending flow" time="0.004117">
+  <failure message="failed Validate Priority Mail Boxes to initiate sending flow" type="failed">
+    <![CDATA[Scenario: Validate Priority Mail Boxes to initiate sending flow
+
+Given Login as horizon_engra3@pb.com
+And I go back to homepage
+And on Home page I select Priority Mail Boxes to initiate sending flow
+When on the create label page I verify default senders address
+And on the create label page I enter Full Name field with Bama Govindaraja for Recipient
+And on the create label page I enter Address1 field with 37 Executive Drive for Recipient
+And on the create label page I enter City field with Danbury for Recipient
+And on the create label page I enter State field with CT for Recipient
+And on the create label page I enter Zip Code field with 06810 for Recipient
+And on the create label page I click on Recipient's Accept and Verify button
+And on the create label page I click on Use Suggested button
+Then on the create label page I see that address was verified
+Then on create label page I see Priority Mail Flat Rate Boxes as package type
+And on create label page I see Priority Mail Express Medium Box as package type
+And on create label page I see Priority Mail Regional Boxes as package type
+And on create label page I see Priority Mail Military Box as package type is disabled
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/homepage_sending_flow_access.feature:7:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type to navigate to sending flow." name="Validate Priority Mail Envelopes to initiate sending flow" time="0.003470">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type to navigate to sending flow." name="Validate My Boxes to initiate sending flow" time="0.031948">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type to navigate to sending flow." name="Validate My Large Envelopes to initiate sending flow" time="0.003231">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

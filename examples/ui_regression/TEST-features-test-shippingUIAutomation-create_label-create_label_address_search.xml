@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="As a user I want to search recipient address" skipped="10" tests="11" time="0.040157">
+<testcase classname="As a user I want to search recipient address" name="Import address book as background data for address search (outline example : | import_addressbook_for_search.csv |)" time="0.001685">
+  <failure message="failed Import address book as background data for address search (outline example : | import_addressbook_for_search.csv |)" type="failed">
+    <![CDATA[Scenario Outline: Import address book as background data for address search
+
+Example row: | import_addressbook_for_search.csv |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/create_label_address_search.feature:5:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to search recipient address" name="I enter search query into search fields for Recipient (outline example : | test | 2 |)" time="0.001542">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to search recipient address" name="I enter search query into search fields for Recipient (outline example : | tar | 1 |)" time="0.001506">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to search recipient address" name="I enter search query into search fields for Recipient (outline example : | frontendovich | 3 |)" time="0.001455">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to search recipient address" name="I enter search query into search fields for Recipient (outline example : | pitney | 3 |)" time="0.001140">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to search recipient address" name="I enter search query into search fields for Recipient (outline example : | bowes | 2 |)" time="0.001261">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to search recipient address" name="I enter search query into search fields for Recipient (outline example : | 37 executive | 2 |)" time="0.001119">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to search recipient address" name="I enter search query into search fields for Recipient (outline example : | darien | 2 |)" time="0.001116">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to search recipient address" name="I enter search query into search fields for Recipient (outline example : | 06810 | 3 |)" time="0.001175">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to search recipient address" name="I enter search query into search fields for Recipient (outline example : | oleg | 1 |)" time="0.001111">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to search recipient address" name="I enter search query into search fields for Recipient (outline example : | cogniance | 1 |)" time="0.027047">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

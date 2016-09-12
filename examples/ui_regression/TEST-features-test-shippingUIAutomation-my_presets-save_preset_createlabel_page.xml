@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="My presets" skipped="4" tests="5" time="0.011711">
+<testcase classname="My presets" name="Create a new preset from Create Label page (outline example : | qa_test_01 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail | Shipment Details Priority Mail ® Small Box Shipping Services USPS Priority Mail® |)" time="0.002303">
+  <failure message="failed Create a new preset from Create Label page (outline example : | qa_test_01 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail | Shipment Details Priority Mail ® Small Box Shipping Services USPS Priority Mail® |)" type="failed">
+    <![CDATA[Scenario Outline: Create a new preset from Create Label page
+
+Example row: | qa_test_01 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail | Shipment Details Priority Mail ® Small Box Shipping Services USPS Priority Mail® |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/my_presets/save_preset_createlabel_page.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="If less than 9 presets exists create till 9 presets and verify save preset is not available on Create label" time="0.003835">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Validations for preset creation on create label page and validate save button inactive (outline example : | qa_test_random | This name is already in use. Please choose a new name. |)" time="0.002961">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Validations for preset creation on create label page and validate save button inactive (outline example : | nil | Name is required |)" time="0.001462">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Validate name field for My Presets accepts only 50 characters and creates the preset with name of 50 characters on Create label (outline example : | There are problems with the current configurations for this gadget. The errors below may have | There are problems with the current configurations |)" time="0.001150">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

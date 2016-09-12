@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Select package type." skipped="1" tests="2" time="0.045559">
+<testcase classname="Select package type." name="Select insurance for PMEI package" time="0.037408">
+  <failure message="failed Select insurance for PMEI package" type="failed">
+    <![CDATA[Scenario: Select insurance for PMEI package
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Create Label page and select Priority Mail Boxes packages
+And on the create label page I verify default senders address
+And on the create label page I enter Valid International Recipient Address
+And on the create label page I click on Recipient's Accept and Verify button
+Then on the create label page I see that address was accepted
+When on create label page I select Priority Mail Express Medium Box as package type
+And on create label page I enter weight as 3 lbs and 0 oz
+And on create label page I click on Accept button
+And on customs form I select Gifts as customs type
+And on customs form I add item as item1 from customs_items.json
+And on customs form I click on add item button
+And on customs form I select NOEEI 30.36 - Shipments destined to Canada as AES exemption
+And on customs form I click on accept T&C checkbox
+And on the create label page I select Insurance as service option
+And on the create label page I calculate -1 dollars amount for Insurance option
+Then on the create label page I verify that Value must be between $1.00 and $5,000.00. error message is displayed for Insurance option
+And on the create label page I calculate 200 dollars amount for Insurance option
+Then on the create label page I verify that fee for Insurance option is Included
+And on the create label page I calculate 1000 dollars amount for Insurance option
+Then on the create label page I verify that fee for Insurance option is 13.05
+And on the create label page I calculate 5000 dollars amount for Insurance option
+Then on the create label page I verify that fee for Insurance option is 59.05
+And on the create label page I calculate 5001 dollars amount for Insurance option
+Then on the create label page I verify that Value must be between $1.00 and $5,000.00. error message is displayed for Insurance option
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/international_packages/create_label_international_options_for_pmi_boxes.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Select insurance for PMEI package" time="0.008151">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Sort Addresses." skipped="7" tests="8" time="0.008513">
+<testcase classname="Sort Addresses." name="Import Addresses to search. Background Action (outline example : | import_addressbook_for_search.csv |)" time="0.000280">
+  <failure message="failed Import Addresses to search. Background Action (outline example : | import_addressbook_for_search.csv |)" type="failed">
+    <![CDATA[Scenario Outline: Import Addresses to search. Background Action
+
+Example row: | import_addressbook_for_search.csv |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/addressbook/addressBookPage_sort.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Sort Addresses." name="Sort addresses (outline example : | Full Name |)" time="0.000953">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Sort Addresses." name="Sort addresses (outline example : | Company |)" time="0.001086">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Sort Addresses." name="Sort addresses (outline example : | Street |)" time="0.001797">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Sort Addresses." name="Sort addresses (outline example : | City |)" time="0.001355">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Sort Addresses." name="Sort addresses (outline example : | State |)" time="0.001003">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Sort Addresses." name="Sort addresses (outline example : | Country |)" time="0.001037">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Sort Addresses." name="Sort addresses (outline example : | Zip |)" time="0.001002">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

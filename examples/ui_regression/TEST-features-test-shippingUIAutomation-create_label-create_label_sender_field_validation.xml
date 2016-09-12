@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Field validation for sender" skipped="9" tests="10" time="0.008988">
+<testcase classname="Field validation for sender" name="I verify error messages for incorrect input data (outline example : | Zip Code | wrong zip | Please Provide Valid US Postal Code (ex. 06810) |)" time="0.001394">
+  <failure message="failed I verify error messages for incorrect input data (outline example : | Zip Code | wrong zip | Please Provide Valid US Postal Code (ex. 06810) |)" type="failed">
+    <![CDATA[Scenario Outline: I verify error messages for incorrect input data
+
+Example row: | Zip Code | wrong zip | Please Provide Valid US Postal Code (ex. 06810) |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/create_label_sender_field_validation.feature:5:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for sender" name="I verify error messages for incorrect input data (outline example : | City | w | String is too short (1 chars), minimum 3 |)" time="0.001288">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for sender" name="I verify error messages for incorrect input data (outline example : | Address1 | w | String is too short (1 chars), minimum 3 |)" time="0.000969">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for sender" name="I verify error messages for incorrect input data (outline example : | Email | 123 | Please provide a valid e-mail |)" time="0.001271">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for sender" name="I verify error messages for Empty fields (outline example : | Address1 | asd | Name or company is required |)" time="0.000861">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for sender" name="I verify error messages for Empty fields (outline example : | Address1 | asd | Company or name is required |)" time="0.000484">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for sender" name="I verify error messages for Empty fields (outline example : | Address1 | asd | City is required |)" time="0.000665">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for sender" name="I verify error messages for Empty fields (outline example : | Address1 | asd | State is required |)" time="0.000451">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for sender" name="I verify error messages for Empty fields (outline example : | Address1 | asd | Zip code is required |)" time="0.000488">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for sender" name="I verify error messages for Empty fields (outline example : | Full Name | asd | Address is required |)" time="0.001117">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

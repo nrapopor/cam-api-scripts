@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Create shipping label." skipped="15" tests="16" time="0.072205">
+<testcase classname="Create shipping label." name="verify default options for priority mail express" time="0.007215">
+  <failure message="failed verify default options for priority mail express" type="failed">
+    <![CDATA[Scenario: verify default options for priority mail express
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Create Label page and select Priority Mail Envelopes packages
+And on the create label page I verify default senders address
+And on the create label page I enter Valid Recipient Address
+And on the create label page I click on Recipient's Accept and Verify button
+Then on the create label page I see that address was verified
+And on create label page I select Priority Mail Express Flat Rate Envelopes as package type
+And on create label page I select Regular Express Flat Rate Envelope as package type
+And on the create label page I select Priority Mail Express as shipping service
+Then on the create label page I verify that Signature Confirmation option is enabled
+And on the create label page I verify that Insurance option is enabled
+And on the create label page I verify that Insurance Restricted Delivery option is enabled
+And on the create label page I verify that Return Receipt option is disabled
+And on the create label page I verify that Fragile option is enabled
+And on the create label page I verify that Collect On Delivery option is disabled
+And on the create label page I verify that COD Restricted Delivery option is enabled
+And on the create label page I verify that Holiday Delivery option is enabled
+And on the create label page I verify that Sunday Delivery option is enabled
+And on the create label page I verify that 10:30 A.M. Delivery option is enabled
+And on the create label page I verify that No Weekend Delivery option is enabled
+And on the create label page I verify that total shipping price is 18.11 dollars
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/createlabel_priority_mail_express_shipping_services.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for priority mail express when Signature Confirmation is selected" time="0.005184">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Priority Mail express verify COD rates (outline example : | 20 | 7.25 | 25.36 |)" time="0.001961">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Priority Mail express verify COD rates (outline example : | 100 | 9.05 | 27.16 |)" time="0.001479">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Priority Mail express change COD rates" time="0.031656">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Priority Mail express verify Insurance shipping option rates (outline example : | 20 | Included | 18.11 |)" time="0.000959">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Priority Mail express verify Insurance shipping option rates (outline example : | 100 | Included | 18.11 |)" time="0.000916">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Priority Mail express verify Insurance shipping option rates (outline example : | 101 | 3.50 | 21.61 |)" time="0.001305">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Priority Mail express change Insurance shipping option rates" time="0.006034">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify enabled and disabled options for selected COD option" time="0.004493">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify enabled and disabled options for selected Insurance option (outline example : | 50 | disabled |)" time="0.000422">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify enabled and disabled options for selected Insurance option (outline example : | 505 | enabled |)" time="0.000421">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Select Return Receipt option with COD option (outline example : | 20 | 28.16 |)" time="0.001166">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Select Return Receipt option with COD option (outline example : | 501 | 38.96 |)" time="0.001502">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Sender phone number verification before print label" time="0.003795">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Sender phone number verification before print label" time="0.003697">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

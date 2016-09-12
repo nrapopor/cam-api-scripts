@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Add Cost Account" skipped="7" tests="8" time="0.047483">
+<testcase classname="Add Cost Account" name="with description" time="0.033767">
+  <failure message="failed with description" type="failed">
+    <![CDATA[Scenario: with description
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Cost Accounts 2 page
+And on Cost Accounts 2 page I click on I want to use Cost Accounts
+When on Cost Accounts 2 page I click Add Cost Account link
+And on Add Cost Accounts 2 page I enter unique name
+And on Add Cost Accounts 2 page I enter description some test description
+And on Add Cost Accounts 2 page I set active status
+And on Add Cost Accounts 2 page I click add
+Then Cost Account 2 is added correctly
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/cost_accounts/add_cost_account_2.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Add Cost Account" name="without description" time="0.001926">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Add Cost Account" name="add default Cost Account" time="0.003050">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Add Cost Account" name="add Inactive Cost Account" time="0.001914">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Add Cost Account" name="unable to add Cost Account without name" time="0.002103">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Add Cost Account" name="unable to add Cost Account with duplicated name" time="0.002690">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Add Cost Account" name="Counters are incremented after adding Cost Account (outline example : | active |)" time="0.001375">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Add Cost Account" name="Counters are incremented after adding Cost Account (outline example : | inactive |)" time="0.000658">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

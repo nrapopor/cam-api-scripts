@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="Used to read list of feature flags with their statuses" skipped="0" tests="1" time="6.986973">
+<testcase classname="Used to read list of feature flags with their statuses" name="Navigate to Feature Flags page and read the list of flags with their statuses" time="6.986973">
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Search/Sort/Filter Cost Accounts." skipped="5" tests="6" time="0.009802">
+<testcase classname="Search/Sort/Filter Cost Accounts." name="Sort Cost Accounts ascending" time="0.002178">
+  <failure message="failed Sort Cost Accounts ascending" type="failed">
+    <![CDATA[Scenario: Sort Cost Accounts ascending
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Cost Accounts 2 page
+And click on show cost accounts checkbox
+When on Cost Accounts 2 page I filter ascending
+Then Cost accounts 2 are sorted correctly in ascending
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/cost_accounts/search_cost_account_2.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Search/Sort/Filter Cost Accounts." name="Sort Cost Accounts 2 descending" time="0.001915">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Search/Sort/Filter Cost Accounts." name="Filter Cost Accounts Active" time="0.001953">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Search/Sort/Filter Cost Accounts." name="Filter Cost Accounts Inactive" time="0.001780">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Search/Sort/Filter Cost Accounts." name="Search Cost Accounts (outline example : | 12 |)" time="0.000998">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Search/Sort/Filter Cost Accounts." name="Search Cost Accounts (outline example : | name |)" time="0.000978">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

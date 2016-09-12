@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="My presets" skipped="8" tests="9" time="0.019864">
+<testcase classname="My presets" name="Create label from settings using preset for Priority mail flat rate envelopes (outline example : | pre_test_00 | Regular Flat Rate Envelope | Priority Mail® Regular Flat Rate Envelope | Priority Mail | Certified Mail | 8.5 |)" time="0.002772">
+  <failure message="failed Create label from settings using preset for Priority mail flat rate envelopes (outline example : | pre_test_00 | Regular Flat Rate Envelope | Priority Mail® Regular Flat Rate Envelope | Priority Mail | Certified Mail | 8.5 |)" type="failed">
+    <![CDATA[Scenario Outline: Create label from settings using preset for Priority mail flat rate envelopes
+
+Example row: | pre_test_00 | Regular Flat Rate Envelope | Priority Mail® Regular Flat Rate Envelope | Priority Mail | Certified Mail | 8.5 |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/my_presets/create_label_from_presets_on_my_presets_page.feature:7:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from settings using preset for Priority mail flat rate envelopes (outline example : | pre_test_01 | Legal Flat Rate Envelope | Priority Mail®Legal Flat Rate Envelope | Priority Mail | Signature Confirmation | 7.7 |)" time="0.002317">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from settings using preset for Priority mail flat rate envelopes (outline example : | pre_test_02 | Padded Flat Rate Envelope | Priority Mail®Padded Flat Rate Envelope | Priority Mail | Signature Confirmation | 8.15 |)" time="0.002242">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from settings using preset for Priority mail express flat rate envelopes (outline example : | pre_test_03 | Regular Express Flat Rate Envelope | Priority Mail Express™ Regular Flat Rate Envelope | Priority Mail Express | 18.11 |)" time="0.001911">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from settings using preset for Priority mail express flat rate envelopes (outline example : | pre_test_04 | Legal Express Flat Rate Envelope | Priority Mail Express™ Legal Flat Rate Envelope | Priority Mail Express | 18.11 |)" time="0.001861">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from settings using preset for Priority mail express flat rate envelopes (outline example : | pre_test_05 | Padded Express Flat Rate Envelope | Priority Mail Express™ Padded Flat Rate Envelope | Priority Mail Express | 18.11 |)" time="0.002032">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from settings using preset for My box irregular package (outline example : | pre_test_10 | Irregular Package | 27 | 18 | 22 | 41 | 13.0 | Priority Mail | Certified Mail | 27.88 |)" time="0.002570">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from settings using preset for envelopes with tracking and signature confirmation (outline example : | pre_test_12 | My Large Envelopes | Thin / Flat Large Envelope | 12 | 11.0 | Media Mail | Signature Confirmation | 10.68 | 5 days |)" time="0.002084">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from settings using preset for envelopes with tracking and signature confirmation (outline example : | pre_test_13 | My Large Envelopes | Thick / Rigid Large Envelope | 20 | 10.0 | Library Mail | Signature Restricted Delivery | 19.79 | 5 days |)" time="0.002075">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

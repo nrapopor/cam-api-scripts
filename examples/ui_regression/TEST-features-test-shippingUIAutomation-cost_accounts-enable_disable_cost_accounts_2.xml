@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Enable/Disable Cost Account" skipped="3" tests="4" time="0.005741">
+<testcase classname="Enable/Disable Cost Account" name="I don't want to use Cost Accounts" time="0.002114">
+  <failure message="failed I don't want to use Cost Accounts" type="failed">
+    <![CDATA[Scenario: I don't want to use Cost Accounts
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Cost Accounts 2 page
+When on Cost Accounts 2 page I click on I don't want to use Cost Accounts
+Then I verify that Cost Accounts are not displayed
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/cost_accounts/enable_disable_cost_accounts_2.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Enable/Disable Cost Account" name="I want to use Cost Accounts" time="0.001254">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Enable/Disable Cost Account" name="I want to use Cost Accounts after I have disabled them" time="0.000945">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Enable/Disable Cost Account" name="I want my choice to be saved after leaving CA page" time="0.001428">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

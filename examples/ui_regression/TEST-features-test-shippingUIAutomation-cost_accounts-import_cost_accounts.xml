@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="As a user I would like to import Cost Accounts" skipped="15" tests="16" time="0.017735">
+<testcase classname="As a user I would like to import Cost Accounts" name="Import correct Cost Accounts file (outline example : | status | import_cost_accounts_correct.csv |)" time="0.002423">
+  <failure message="failed Import correct Cost Accounts file (outline example : | status | import_cost_accounts_correct.csv |)" type="failed">
+    <![CDATA[Scenario Outline: Import correct Cost Accounts file
+
+Example row: | status | import_cost_accounts_correct.csv |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/cost_accounts/import_cost_accounts.feature:5:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import correct Cost Accounts file (outline example : | without_status | import_cost_accounts_correct_wo_status.csv |)" time="0.001690">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import correct Cost Accounts file" time="0.002006">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import incorrect Cost Account file (outline example : | duplicated_name | import_cost_accounts_incorrect_dup_name.csv |)" time="0.001904">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import incorrect Cost Account file (outline example : | incorrect_name_length | import_cost_accounts_incorrect_long_name.csv |)" time="0.001188">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import incorrect Cost Account file (outline example : | incorrect_description_length | import_cost_accounts_incorrect_long_desc.csv |)" time="0.001094">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import incorrect Cost Account file (outline example : | wrong_status | import_cost_accounts_incorrect_wrong_status.csv |)" time="0.001136">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Download csv template for importing cost accounts" time="0.002225">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import incorrect Cost Account file, verification of exceptions table (outline example : | duplicated_name | import_cost_accounts_incorrect_dup_name.csv |)" time="0.000786">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import incorrect Cost Account file, verification of exceptions table (outline example : | incorrect_name_length | import_cost_accounts_incorrect_long_name.csv |)" time="0.000364">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import incorrect Cost Account file, verification of exceptions table (outline example : | incorrect_description_length | import_cost_accounts_incorrect_long_desc.csv |)" time="0.000360">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import incorrect Cost Account file, verification of exceptions table (outline example : | wrong_status | import_cost_accounts_incorrect_wrong_status.csv |)" time="0.000356">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import incorrect Cost Accounts file, retrieve status file (outline example : | duplicated_name | import_cost_accounts_incorrect_dup_name.csv |)" time="0.001131">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import incorrect Cost Accounts file, retrieve status file (outline example : | incorrect_name_length | import_cost_accounts_incorrect_long_name.csv |)" time="0.000359">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import incorrect Cost Accounts file, retrieve status file (outline example : | incorrect_description_length | import_cost_accounts_incorrect_long_desc.csv |)" time="0.000357">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I would like to import Cost Accounts" name="Import incorrect Cost Accounts file, retrieve status file (outline example : | wrong_status | import_cost_accounts_incorrect_wrong_status.csv |)" time="0.000356">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

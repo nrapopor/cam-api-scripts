@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Select package type." skipped="2" tests="3" time="0.046730">
+<testcase classname="Select package type." name="Verify package rates for My Boxes Small Box" time="0.005063">
+  <failure message="failed Verify package rates for My Boxes Small Box" type="failed">
+    <![CDATA[Scenario: Verify package rates for My Boxes Small Box
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Create Label page and select My Boxes packages
+And on the create label page I verify default senders address
+And on the create label page I enter Valid International Recipient Address
+And on the create label page I click on Recipient's Accept and Verify button
+Then on the create label page I see that address was accepted
+And on create label page I select Small Package as package type
+And on create label page I enter weight as 3 lbs and 0 oz
+And on create label page I click on Accept button
+And on customs form I select Gifts as customs type
+And on customs form I add item as item1 from customs_items.json
+And on customs form I click on add item button
+And on customs form I select NOEEI 30.36 - Shipments destined to Canada as AES exemption
+And on customs form I click on accept T&C checkbox
+Then on the create label page I verify that price for First-Class Package International Service package is 21.02 dollars
+Then on the create label page I verify that price for Priority Mail International package is 31.02 dollars
+Then on the create label page I verify that price for Priority Mail Express International package is 46.04 dollars
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/international_packages/create_label_international_rates_for_my_boxes.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Verify package rates for My Boxes Small Box" time="0.005004">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Verify package rates for My Boxes Small Box" time="0.036663">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

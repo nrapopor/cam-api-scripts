@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="My presets" skipped="18" tests="19" time="0.044786">
+<testcase classname="My presets" name="Create a new preset from My Presets page priority box and envelope (outline example : | qa_test_01 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail | Fragile | Shipment Details Priority Mail ® Small Box Shipping Services USPS Priority Mail® Fragile |)" time="0.003346">
+  <failure message="failed Create a new preset from My Presets page priority box and envelope (outline example : | qa_test_01 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail | Fragile | Shipment Details Priority Mail ® Small Box Shipping Services USPS Priority Mail® Fragile |)" type="failed">
+    <![CDATA[Scenario Outline: Create a new preset from My Presets page priority box and envelope
+
+Example row: | qa_test_01 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail | Fragile | Shipment Details Priority Mail ® Small Box Shipping Services USPS Priority Mail® Fragile |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/my_presets/create_preset_mypresets_page.feature:7:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create a new preset from My Presets page priority box and envelope (outline example : | qa_test_02 | Priority Mail Boxes | Priority Mail Express Medium Box |  | Priority Mail Express | Signature Confirmation | Shipment Details Priority Mail Express™ Medium Flat Rate Box Shipping Services USPS Priority Mail Express™ Signature Confirmation™ |)" time="0.003218">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create a new preset from My Presets page priority box and envelope (outline example : | qa_test_03 | Priority Mail Envelopes | Priority Mail Flat Rate Envelopes | Legal Flat Rate Envelope | Priority Mail | Certified Mail | Shipment Details Priority Mail®Legal Flat Rate Envelope Shipping Services USPS Priority Mail® Certified Mail® |)" time="0.002849">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create a new preset from My Presets page for My Boxes (outline example : | qa_create_box | My Boxes | Irregular Package | 17 | 8 | 6 | 6 | 11 | Media Mail | Collect On Delivery | Shipment Details Irregular Package Shipping Services USPS Media Mail® Collect on Delivery |)" time="0.004280">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create a new preset from My Presets page for Large envelopes (outline example : | qa_create_env | My Large Envelopes | Thin / Flat Large Envelope | 17 | 8 | Media Mail | Signature Confirmation | Collect On Delivery | Shipment Details Thin / Flat Large Envelope Shipping Services USPS Media Mail® Signature Confirmation™ Collect on Delivery |)" time="0.003445">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create and validate Delete operations from My Presets page. And confirm record does not exists in container upon delete (outline example : | qa_test_delete | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box |)" time="0.003191">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create and Edit a preset from My Presets page and verify for updated details (outline example : | qa_test_edit | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | qa_edited | Priority Mail Envelopes | Priority Mail Flat Rate Envelopes | Padded Flat Rate Envelope | Priority Mail | Signature Confirmation | Shipment Details Priority Mail®Padded Flat Rate Envelope Shipping Services USPS Priority Mail® Signature Confirmation™ |)" time="0.005917">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create a new preset from My Presets page and verify Print Shipping label takes to create label page (outline example : | qa_test_label | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Shipment Details Priority Mail ® Small Box Shipping Services USPS Priority Mail® |)" time="0.002924">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Validate messages on My Presets name field and validate save button inactive (outline example : | random | This name is already in use. Please choose a new name. |)" time="0.001861">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Validate messages on My Presets name field and validate save button inactive (outline example : | lower | This name is already in use. Please choose a new name. |)" time="0.001114">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Validate messages on My Presets name field and validate save button inactive (outline example : | upper | This name is already in use. Please choose a new name. |)" time="0.001257">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Validate messages on My Presets name field and validate save button inactive (outline example : | nil | Name is required |)" time="0.001377">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Validate name field for My Presets accepts only 50 characters and creates the preset with name of 50 characters (outline example : | There are problems with the current configurations for this gadget. The errors below may have | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | There are problems with the current configurations |)" time="0.002459">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Cancel preset creation" time="0.002183">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="If less than 9 presets exists create till 9 presets and verify create link is not seen" time="0.001056">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Verify reordering of presets on My Presets page (outline example : | 3 | 1 |)" time="0.001138">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Verify reordering of presets on My Presets page (outline example : | 9 | 4 |)" time="0.000723">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Verify reordering of presets on My Presets page (outline example : | 2 | 6 |)" time="0.000870">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Validate text present on My Presets page" time="0.001578">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

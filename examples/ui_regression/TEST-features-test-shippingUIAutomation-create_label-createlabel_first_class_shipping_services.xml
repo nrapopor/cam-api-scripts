@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Create shipping label." skipped="45" tests="46" time="0.465169">
+<testcase classname="Create shipping label." name="verify default options for First Class" time="0.014567">
+  <failure message="failed verify default options for First Class" type="failed">
+    <![CDATA[Scenario: verify default options for First Class
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Create Label page and select My Boxes packages
+And on the create label page I verify default senders address
+And on the create label page I enter Valid Recipient Address
+And on the create label page I click on Recipient's Accept and Verify button
+Then on the create label page I see that address was verified
+And on create label page I select Small Package as package type
+And on create label page I enter weight as 0 lbs and 5 oz
+And on create label page I click on Accept button
+And on the create label page I select First Class as shipping service
+Then on the create label page I verify that free tracking message is displayed.
+And on the create label page I verify that Signature Confirmation option is enabled
+And on the create label page I verify that Signature Restricted Delivery option is enabled
+And on the create label page I verify that Insurance option is enabled
+And on the create label page I verify that Insurance Restricted Delivery option is enabled
+And on the create label page I verify that Certified Mail option is enabled
+And on the create label page I verify that Certified Mail Restricted Delivery option is enabled
+And on the create label page I verify that Registered Mail option is enabled
+And on the create label page I verify that Registered Restricted Delivery option is enabled
+And on the create label page I verify that Registered Insured Restricted Delivery option is enabled
+And on the create label page I verify that Return Receipt option is disabled
+And on the create label page I verify that Return Receipt Electronic option is disabled
+And on the create label page I verify that Fragile option is enabled
+And on the create label page I verify that Collect On Delivery option is enabled
+And on the create label page I verify that COD Restricted Delivery option is enabled
+And on the create label page I verify that total shipping price is 2.22 dollars
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/createlabel_first_class_shipping_services.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when Signature Confirmation is selected" time="0.043995">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when Signature Confirmation and Registered Mail is selected" time="0.009903">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when Signature Confirmation and Registered Restricted Delivery is selected" time="0.006266">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when Signature Confirmation and Registered Insured Restricted Delivery is selected" time="0.038729">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when Signature Confirmation and COD is selected" time="0.008055">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for First Class when Signature Confirmation and COD is selected" time="0.004121">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when Signature Confirmation and COD Restricted Delivery is selected" time="0.045749">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for First Class when Signature Confirmation and COD Restricted Delivery is selected" time="0.004496">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when Signature Restricted Delivery is selected" time="0.008791">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when only Insurance is selected (outline example : | 50 | disabled |)" time="0.001870">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when only Insurance is selected (outline example : | 505 | enabled |)" time="0.001739">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for First Class when Insurance is selected" time="0.034152">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for First Class when Insurance, Fragile and Return Receipt is selected" time="0.004718">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when only Insurance Restricted Delivery is selected (outline example : | 505 |)" time="0.001511">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when only Insurance Restricted Delivery is selected (outline example : | 4999 |)" time="0.000758">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for Insurance Restricted Delivery (outline example : | 50 |)" time="0.001022">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for Insurance Restricted Delivery (outline example : | 5050 |)" time="0.000622">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for Insurance Restricted Delivery (outline example : | -9 |)" time="0.000628">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for Insurance Restricted Delivery (outline example : | k |)" time="0.000704">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for First Class when Insurance Restricted Delivery, Fragile and Return Receipt is selected (outline example : | 29.97 |)" time="0.001476">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when only Certified Mail is selected" time="0.037338">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for First Class when Certified Mail, Return Receipt and Fragile is selected" time="0.003351">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when only Certified Mail Restricted Delivery is selected" time="0.005368">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for First Class when Certified Mail Restricted Delivery, Return Receipt and Fragile is selected" time="0.004179">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when only Registered Mail is selected" time="0.031338">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for First Class when Registered Mail, Fragile, Return Receipt Electronic and Return Receipt is selected" time="0.004695">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when only Registered Restricted Delivery is selected" time="0.004869">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for First Class when Registered Restricted Delivery, Fragile, Return Receipt Electronic and Return Receipt is selected" time="0.003551">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when only Registered Insured Restricted Delivery is selected" time="0.034016">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for First Class when Registered Restricted Delivery, Fragile, Return Receipt Electronic and Return Receipt is selected" time="0.003970">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when only Collect On Delivery is selected" time="0.006624">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for First Class when Collect On Delivery, Fragile and Return Receipt is selected" time="0.028792">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for First Class when only Collect On Delivery Restricted Delivery is selected" time="0.006484">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for COD Restricted Delivery (outline example : | 0 |)" time="0.001101">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for COD Restricted Delivery (outline example : | -9 |)" time="0.000657">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for COD Restricted Delivery (outline example : | k |)" time="0.000651">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for First Class when COD Restricted Delivery, Fragile and Return Receipt is selected" time="0.004119">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify COD rates for First Class (outline example : | 50 | 7.25 | 9.47 |)" time="0.001882">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify COD rates for First Class (outline example : | 100 | 9.05 | 11.27 |)" time="0.000999">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify COD rates for First Class (outline example : | 200 | 10.85 | 13.07 |)" time="0.001657">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="change COD rates for First Class" time="0.034337">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify Insurance shipping option rates for  First Class (outline example : | 20 | 2.20 | 4.42 |)" time="0.001724">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify Insurance shipping option rates for  First Class (outline example : | 200 | 3.50 | 5.72 |)" time="0.001608">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify Insurance shipping option rates for  First Class (outline example : | 505 | 9.45 | 11.67 |)" time="0.001334">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="change Insurance shipping option rates for  First Class" time="0.006653">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

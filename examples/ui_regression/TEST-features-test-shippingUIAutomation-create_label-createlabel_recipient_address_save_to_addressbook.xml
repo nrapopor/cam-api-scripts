@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="On Create label page - recipient address - Save to address book." skipped="5" tests="6" time="0.018071">
+<testcase classname="On Create label page - recipient address - Save to address book." name="Enter recipient address (outline example : | true | Pitney Bowes | 37 Executive Dr | Danbury | 06810 | Horizon_user1@pb.com | 21C | CT | 675-435-3456 | United States |)" time="0.004700">
+  <failure message="failed Enter recipient address (outline example : | true | Pitney Bowes | 37 Executive Dr | Danbury | 06810 | Horizon_user1@pb.com | 21C | CT | 675-435-3456 | United States |)" type="failed">
+    <![CDATA[Scenario Outline: Enter recipient address
+
+Example row: | true | Pitney Bowes | 37 Executive Dr | Danbury | 06810 | Horizon_user1@pb.com | 21C | CT | 675-435-3456 | United States |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/createlabel_recipient_address_save_to_addressbook.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="On Create label page - recipient address - Save to address book." name="Edit full name, email and Save to address book, Verification not required (outline example : | true | Pitney Bowes | 37 Executive Dr | Danbury | 06810 | Horizon_user1@pb.com | 21C | CT | 675-435-3456 | United States | false | false |)" time="0.002479">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="On Create label page - recipient address - Save to address book." name="Edit full name, email and Save to address book, Verification not required (outline example : | true | Pitney Bowes | 37 Executive Dr | Danbury | 06810 | Horizon_user1@pb.com | 21C | CT | 675-435-3456 | United States | Horizon_Davis@pb.com | false |)" time="0.001940">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="On Create label page - recipient address - Save to address book." name="Edit Company name, street and Save to address book, Verification required (outline example : | true | Pitney Bowes | 37 Executive Dr | Danbury | 06810 | Horizon_user1@pb.com | 21C | CT | 675-435-3456 | United States | chase | false | false |)" time="0.003998">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="On Create label page - recipient address - Save to address book." name="Edit Company name, street and Save to address book, Verification required (outline example : | true | Pitney Bowes | 37 Executive Dr | Danbury | 06810 | Horizon_user1@pb.com | 21C | CT | 675-435-3456 | United States | false | 37 Executive Drive | false |)" time="0.002677">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="On Create label page - recipient address - Save to address book." name="Edit Company name, street and Save to address book, Verification required (outline example : | true | Pitney Bowes | 37 Executive Dr | Danbury | 06810 | Horizon_user1@pb.com | 21C | CT | 675-435-3456 | United States | false | false | 06811 |)" time="0.002277">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

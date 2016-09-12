@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Create shipping label." skipped="32" tests="33" time="0.207252">
+<testcase classname="Create shipping label." name="verify default options for Parcel Select" time="0.038801">
+  <failure message="failed verify default options for Parcel Select" type="failed">
+    <![CDATA[Scenario: verify default options for Parcel Select
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Create Label page and select My Boxes packages
+And on the create label page I verify default senders address
+And on the create label page I enter Valid Recipient Address
+And on the create label page I click on Recipient's Accept and Verify button
+Then on the create label page I see that address was verified
+And on create label page I select Small Package as package type
+And on create label page I enter weight as 5 lbs and 5 oz
+And on create label page I click on Accept button
+And on the create label page I select Parcel Select as shipping service
+Then on the create label page I verify that free tracking message is displayed.
+And on the create label page I verify that Signature Confirmation option is enabled
+And on the create label page I verify that Signature Restricted Delivery option is enabled
+And on the create label page I verify that Insurance option is enabled
+And on the create label page I verify that Insurance Restricted Delivery option is enabled
+And on the create label page I verify that Return Receipt option is disabled
+And on the create label page I verify that Return Receipt Electronic option is disabled
+And on the create label page I verify that Fragile option is enabled
+And on the create label page I verify that Return Receipt for Merchandise option is enabled
+And on the create label page I verify that Collect On Delivery option is enabled
+And on the create label page I verify that COD Restricted Delivery option is enabled
+And on the create label page I verify that total shipping price is 9.55 dollars
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/createlabel_parcel_select_shipping_services.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options forParcel Select when Signature Confirmation is selected" time="0.005794">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for Parcel Select when Signature Confirmation and COD is selected" time="0.005101">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for Parcel Select when Signature Confirmation and COD is selected" time="0.003266">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for Parcel Select when Signature Confirmation and COD Restricted Delivery is selected" time="0.034396">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for Parcel Select when Signature Confirmation and COD Restricted Delivery is selected" time="0.003995">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for Parcel Select when only Insurance is selected (outline example : | 50 | disabled |)" time="0.000733">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for Parcel Select when only Insurance is selected (outline example : | 505 | enabled |)" time="0.000407">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for Parcel Select when Insurance is selected" time="0.002946">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for Parcel Select when Insurance, Fragile and Return Receipt is selected" time="0.003511">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for Parcel Select when only Insurance Restricted Delivery is selected (outline example : | 505 |)" time="0.000358">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for Parcel Select when only Insurance Restricted Delivery is selected (outline example : | 4999 |)" time="0.000370">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for Insurance Restricted Delivery (outline example : | 50 |)" time="0.000253">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for Insurance Restricted Delivery (outline example : | 5050 |)" time="0.000273">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for Insurance Restricted Delivery (outline example : | -9 |)" time="0.000264">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for Insurance Restricted Delivery (outline example : | k |)" time="0.000376">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for Parcel Select when Insurance Restricted Delivery, Fragile and Return Receipt is selected" time="0.004313">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for Parcel Select when only Return Receipt for Merchandise is selected" time="0.004567">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for Parcel Select when only Collect On Delivery is selected" time="0.004953">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for Parcel Select when Collect On Delivery, Fragile and Return Receipt is selected" time="0.037779">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify shipping options for Parcel Select when only Collect On Delivery Restricted Delivery is selected" time="0.005165">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for COD Restricted Delivery (outline example : | 0 |)" time="0.000323">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for COD Restricted Delivery (outline example : | -9 |)" time="0.000261">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify error messages for COD Restricted Delivery (outline example : | k |)" time="0.000252">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Verify rates for Parcel Select when COD Restricted Delivery, Fragile and Return Receipt is selected" time="0.003597">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify COD rates for Parcel Select (outline example : | 50 | 7.25 | 16.80 |)" time="0.001330">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify COD rates for Parcel Select (outline example : | 100 | 9.05 | 18.60 |)" time="0.001149">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify COD rates for Parcel Select (outline example : | 200 | 10.85 | 20.40 |)" time="0.000919">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="change COD rates for Parcel Select" time="0.033956">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify Insurance shipping option rates for  Parcel Select (outline example : | 20 | 2.20 | 11.75 |)" time="0.001030">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify Insurance shipping option rates for  Parcel Select (outline example : | 200 | 3.50 | 13.05 |)" time="0.001141">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="verify Insurance shipping option rates for  Parcel Select (outline example : | 505 | 9.45 | 19.00 |)" time="0.000974">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="change Insurance shipping option rates for  Parcel Select" time="0.004699">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

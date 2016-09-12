@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Create Label Edit Sender Address" skipped="4" tests="5" time="0.043466">
+<testcase classname="Create Label Edit Sender Address" name="Get OriginalOrSuggested sender address from address book and select suggested" time="0.004425">
+  <failure message="failed Get OriginalOrSuggested sender address from address book and select suggested" type="failed">
+    <![CDATA[Scenario: Get OriginalOrSuggested sender address from address book and select suggested
+
+Given Login as horizon_engra3@pb.com
+And on Dashboard page I click on Address Book tab to navigate to Address Book page
+And on the Address Book page I select Sender and delete all the addresses except default
+And on Address Book page I create new OriginalOrSuggested Sender address
+And I navigate to Create Label page and select Priority Mail Boxes packages
+And on the create label page I verify default senders address
+And on the create label page I click on Sender Change link and select Get from address book
+And I select OriginalOrSuggested Sender address from Address Book
+And on the create label page I click on Use Suggested button
+Then I verify that displayed OriginalOrSuggested Sender's address matches expected suggested
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/createlabel_sender_get_from_addressbook.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create Label Edit Sender Address" name="Get Enhanced sender address" time="0.003171">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create Label Edit Sender Address" name="Get Suggested sender address" time="0.003370">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create Label Edit Sender Address" name="Get Valid sender address" time="0.002507">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create Label Edit Sender Address" name="Get validated sender address from address book" time="0.029993">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

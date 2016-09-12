@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="My Presets." skipped="0" tests="1" time="0.005901">
+<testcase classname="My Presets." name="I verify that homepage displays the created preset for multicarrier option (outline example : | qa_test_911 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail ® Small Box Priority Mail® |)" time="0.005901">
+  <failure message="failed I verify that homepage displays the created preset for multicarrier option (outline example : | qa_test_911 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail ® Small Box Priority Mail® |)" type="failed">
+    <![CDATA[Scenario Outline: I verify that homepage displays the created preset for multicarrier option
+
+Example row: | qa_test_911 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail ® Small Box Priority Mail® |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/my_presets/display_presets_homepage.feature:7:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

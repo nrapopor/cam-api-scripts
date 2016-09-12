@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Export Address Book" skipped="3" tests="4" time="0.010533">
+<testcase classname="Export Address Book" name="Import wrong file" time="0.003264">
+  <failure message="failed Import wrong file" type="failed">
+    <![CDATA[Scenario: Import wrong file
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Address Book page
+And on Address Book page I'm looking at number of listed items
+And on Address Book page I click on Add contact link
+And on Add Contact page I select Import contacts tab
+When on Add Contact page I select csv to import as wrong_file_to_import.csv
+And on Add Contact page I click on Continue Import
+Then on Add Contact Page I verify that toast message is Malformed file. Please, select correct CSV file.
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/addressbook/import_incorrect_address_book.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Export Address Book" name="Import csv with wrong data, downloading log file" time="0.003169">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Export Address Book" name="Import wrong file" time="0.002049">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Export Address Book" name="Import csv with wrong data, downloading log file" time="0.002051">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

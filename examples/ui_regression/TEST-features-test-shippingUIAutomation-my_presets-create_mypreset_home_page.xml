@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="My presets" skipped="5" tests="6" time="0.049502">
+<testcase classname="My presets" name="Create a preset from homepage for priority mail boxes (outline example : | qa_test_111 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box |)" time="0.002605">
+  <failure message="failed Create a preset from homepage for priority mail boxes (outline example : | qa_test_111 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box |)" type="failed">
+    <![CDATA[Scenario Outline: Create a preset from homepage for priority mail boxes
+
+Example row: | qa_test_111 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/my_presets/create_mypreset_home_page.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create a preset from homepage for priority mail regional boxes (outline example : | qa_test_101 | Priority Mail Boxes | Priority Mail Regional Boxes | Priority Mail Region A Box | 7 | 8 | Priority Mail | Fragile | Shipment Details Priority Mail ® Region A Box Shipping Services USPS Priority Mail® Fragile |)" time="0.004962">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create a preset from homepage for priority mail regional boxes (outline example : | qa_test_102 | Priority Mail Boxes | Priority Mail Regional Boxes | Priority Mail Region B Box | 17 | 9 | Priority Mail | Signature Confirmation | Shipment Details Priority Mail ® Region B Box Shipping Services USPS Priority Mail® Signature Confirmation™ |)" time="0.004076">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create a preset from homepage for priority mail regional boxes (outline example : | qa_test_103 | Priority Mail Boxes | Priority Mail Regional Boxes | Priority Mail Region C Box | 20 | 5 | Priority Mail | Certified Mail | Shipment Details Priority Mail ® Region C Box Shipping Services USPS Priority Mail® Certified Mail® |)" time="0.003537">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="If less than 9 presets exists create till 9 presets and verify create link is not seen on homepage" time="0.033374">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Validate Add Presets title text in Presets container on Home Page (outline example : | Create shortcuts for shipments you do frequently. (For domestic shipments only) |)" time="0.000948">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

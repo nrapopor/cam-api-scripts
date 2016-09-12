@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Email verification for label creation." skipped="6" tests="7" time="0.044783">
+<testcase classname="Email verification for label creation." name="Verify custom email notification with multiple recipient emails (outline example : | true | true | Customizable Email Subjects | test custom recipient message | true | true | sender@mailinator.com | recipient@mailinator.com,recipient2@mailinator.com | yes | yes |)" time="0.004274">
+  <failure message="failed Verify custom email notification with multiple recipient emails (outline example : | true | true | Customizable Email Subjects | test custom recipient message | true | true | sender@mailinator.com | recipient@mailinator.com,recipient2@mailinator.com | yes | yes |)" type="failed">
+    <![CDATA[Scenario Outline: Verify custom email notification with multiple recipient emails
+
+Example row: | true | true | Customizable Email Subjects | test custom recipient message | true | true | sender@mailinator.com | recipient@mailinator.com,recipient2@mailinator.com | yes | yes |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/email.feature:6:in `Given Login as horizon_engra12@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Email verification for label creation." name="Verify email notification (outline example : | true | true | true | true | true | true | sender@mailinator.com | recipient@mailinator.com | yes | yes |)" time="0.003144">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Email verification for label creation." name="Verify email notification (outline example : | true | true | false | false | true | true | sender@mailinator.com | recipient@mailinator.com | yes | yes |)" time="0.002156">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Email verification for label creation." name="Verify email notification (outline example : | false | true | false | false | true | true | sender@mailinator.com | recipient@mailinator.com | no | yes |)" time="0.030252">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Email verification for label creation." name="Verify email notification (outline example : | true | false | false | false | true | true | sender@mailinator.com | recipient@mailinator.com | yes | yes |)" time="0.001952">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Email verification for label creation." name="Verify email notification (outline example : | false | false | true | true | true | true | sender@mailinator.com | recipient@mailinator.com | no | no |)" time="0.001716">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Email verification for label creation." name="Verify email notification (outline example : | false | false | false | false | true | true | sender@mailinator.com | recipient@mailinator.com | no | yes |)" time="0.001289">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

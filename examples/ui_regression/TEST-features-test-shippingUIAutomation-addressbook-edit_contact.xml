@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Address Book." skipped="8" tests="9" time="0.041161">
+<testcase classname="Address Book." name="Edit Contact: success flow (outline example : | true | Pitney Bowes | United States | 37 Executive DR | false | Danbury | CT | 06810 |)" time="0.001086">
+  <failure message="failed Edit Contact: success flow (outline example : | true | Pitney Bowes | United States | 37 Executive DR | false | Danbury | CT | 06810 |)" type="failed">
+    <![CDATA[Scenario Outline: Edit Contact: success flow
+
+Example row: | true | Pitney Bowes | United States | 37 Executive DR | false | Danbury | CT | 06810 |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/addressbook/edit_contact.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Address Book." name="Edit Contact: success flow (outline example : | true | PBI | United States | 37 Executive DR | false | Danbury | CT | 06810 |)" time="0.001051">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Address Book." name="Edit Contact: success flow (outline example : | true | Pitney Bowes Inc. | United States | 37 Executive DR | false | Danbury | CT | 06810-4147 |)" time="0.001060">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Address Book." name="Edit Contact: success flow (outline example : | true | JPMorgan Chase &amp; Co. | United States | 270 Park Ave | false | New York | NY | 10017 |)" time="0.001019">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Address Book." name="Edit Contact: success flow (outline example : | true | PB | United States | 37 Executive DR | 3B1 | Danbury | CT | 10950 |)" time="0.001121">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Address Book." name="Edit Contact: success flow (outline example : | true | false | United States | 885 Post Road | 3B1 | Darien | CT | 06820 |)" time="0.027792">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Address Book." name="Edit Contact: success flow (outline example : | 10 | false | United States | 885 Post Road | 3B1 | Darien | CT | 06820 |)" time="0.001217">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Address Book." name="Edit Contact: success flow" time="0.003066">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Address Book." name="Edit Contact: with company name, without full name" time="0.003749">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Create shipping label." skipped="3" tests="4" time="0.041716">
+<testcase classname="Create shipping label." name="I verify that sender address is inserted as Recipient after clicking on Print Return label" time="0.005341">
+  <failure message="failed I verify that sender address is inserted as Recipient after clicking on Print Return label" type="failed">
+    <![CDATA[Scenario: I verify that sender address is inserted as Recipient after clicking on Print Return label
+
+Given Login as horizon_engra3@pb.com
+And on feature flags page I set Create Return Label Button feature as on
+And I navigate to Address Book page
+And on the Address Book page I select Sender and delete all the addresses
+And I navigate to Create Label page and select Priority Mail Boxes packages
+And on the create label page I click on Use Suggested button
+And on the create label page I print shipping label
+And I navigate to Shipping and Postage history page
+And on the Report page I select the Report Date Range as "Recent"
+And on the Report page I select first transaction
+And on selected recent transaction I click Print Return Label
+Then on Create Label page I verify recipient address match to defaultSenderForAutomation address template
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/createlabel_print_return_label.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="I Print Return Label" time="0.030077">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="I verify shipping date for Return label" time="0.005000">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create shipping label." name="Set Create Return Label Button feature flag to it's default state" time="0.001298">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

@@ -35,13 +35,17 @@ CAM API call sequence. For an implementation example see `bin/parse_api.sh`
 * `bin/removeClosedSessions.sh` -- removes any closed sessions from CAM
 * `bin/closeSession.sh`		-- closes the active session opened by `bin/initSession.sh` script 
  
-## Example
-* bin/parse_api_sh - this file will require the RSpec API xml (I used on provided and it's included    
-  here in the main folder)    
+## Examples
+* __bin/parse_api.sh__ - this file will require the RSpec API xml (I used one provided, and it's included    
+  here in the `examples/RSpecResults` folder)    
 ```bash
         bin/parse_api.sh -f examples/RSpecResults/report.xml -S examples/RSpecResults/static_coverage.xml -P Project1 -U
 ```
-
+* __bin/parse_regression.sh__ - this file will require the TestNG results xml (I used the provided ones and it's included    
+  here in the `examples/ui_regression` folder)    
+```bash
+        bin/parse_regression.sh -f examples/ui_regression -P Project1 -r reports -s "Regression Suite" -U
+```
 ## Author
 	Nick Rapoport
 

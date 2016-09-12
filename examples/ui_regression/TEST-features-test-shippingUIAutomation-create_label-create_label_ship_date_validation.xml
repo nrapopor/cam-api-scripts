@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="As a user I want my default shipping date to be today so that I can get my package shipped on time" skipped="0" tests="1" time="0.004327">
+<testcase classname="As a user I want my default shipping date to be today so that I can get my package shipped on time" name="Default Ship date verification" time="0.004327">
+  <failure message="failed Default Ship date verification" type="failed">
+    <![CDATA[Scenario: Default Ship date verification
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Address Book page
+And on Address Book page I import addresses with overwrite from contacts_for_address_verification.csv
+And I navigate to Settings drop down
+And I select Emails under Settings
+And on Email Settings page I set 'Send email to Recipient' to false
+And on Email Settings page I set 'Send email to myself(sender)' to false
+And I navigate to Create Label page and select Priority Mail Boxes packages
+When on the create label page I verify default senders address
+And on the create label page I enter Valid Recipient Address
+And on the create label page I click on Recipient's Accept and Verify button
+And on create label page I select Priority Mail Flat Rate Boxes as package type
+And on create label page I select Priority Mail Small Box as package type
+Then I verify that Ship date is defaulted to today on create label page
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/create_label_ship_date_validation.feature:5:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

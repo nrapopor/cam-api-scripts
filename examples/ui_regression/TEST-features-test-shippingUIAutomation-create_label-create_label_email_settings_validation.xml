@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Automatic email settings that enables sending tracking info for every shipping label." skipped="15" tests="16" time="0.076331">
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to recipient and sender and verify for email prompt on create label page (outline example : | true | true | A valid email is required | Click Change to provide the sender’s email address. | is | is |)" time="0.025664">
+  <failure message="failed Set and unset send email to recipient and sender and verify for email prompt on create label page (outline example : | true | true | A valid email is required | Click Change to provide the sender’s email address. | is | is |)" type="failed">
+    <![CDATA[Scenario Outline: Set and unset send email to recipient and sender and verify for email prompt on create label page
+
+Example row: | true | true | A valid email is required | Click Change to provide the sender’s email address. | is | is |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/create_label_email_settings_validation.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to recipient and sender and verify for email prompt on create label page (outline example : | false | false | A valid email is required | Click Change to provide the sender’s email address. | is not | is not |)" time="0.002547">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to recipient and sender and verify for email prompt on create label page (outline example : | true | false | A valid email is required | Click Change to provide the sender’s email address. | is not | is |)" time="0.000967">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to recipient and sender and verify for email prompt on create label page (outline example : | false | true | A valid email is required | Click Change to provide the sender’s email address. | is | is not |)" time="0.000927">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to recipient and sender on settings page and uncheck or check on create label page and verify for email prompt message (outline example : | true | A valid email is required | Click Change to provide the sender’s email address. | is not | false |)" time="0.002403">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to recipient and sender on settings page and uncheck or check on create label page and verify for email prompt message (outline example : | false | A valid email is required | Click Change to provide the sender’s email address. | is | true |)" time="0.002380">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to recipient on settings page and select an address from address book that has email on create label page and verify for email prompt message (outline example : | true | A valid email is required | is not |)" time="0.001776">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to recipient on settings page and select an address from address book that has email on create label page and verify for email prompt message (outline example : | false | A valid email is required | is not |)" time="0.000553">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to recipient on settings page and update an address that has email with no email on create label page and verify for email prompt message (outline example : | true | A valid email is required | is | is | false |  | Tom Cruise |)" time="0.026461">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to recipient on settings page and update an address that has email with no email on create label page and verify for email prompt message (outline example : | true | A valid email is required | is | is not | true | brad_pitt@gmail.com | Brad Pitt |)" time="0.002248">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to recipient on settings page and update an address that has email with no email on create label page and verify for email prompt message (outline example : | false | A valid email is required | is not | is not | false |  | Viggo Mortenson |)" time="0.001688">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to recipient on settings page and update an address that has email with no email on create label page and verify for email prompt message (outline example : | false | A valid email is required | is not | is not | true | jackie_chan@pb.com | Jackie Chan |)" time="0.001758">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to sender on settings page and select an address from address book that has no email on create label page and verify for email prompt message (outline example : | true | Click Change to provide the sender’s email address. | is not | horizon_guam@pb.com | true | 200 Hopmeadow St |)" time="0.003139">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to sender on settings page and select an address from address book that has no email on create label page and verify for email prompt message (outline example : | false | Click Change to provide the sender’s email address. | is not | horizon_default@pb.com | true | 200 Hopmeadow St |)" time="0.001375">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to sender on settings page and select an address from address book that has no email on create label page and verify for email prompt message (outline example : | false | Click Change to provide the sender’s email address. | is not |  | false | 200 Hopmeadow St |)" time="0.001506">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Automatic email settings that enables sending tracking info for every shipping label." name="Set and unset send email to sender on settings page and select an address from address book that has no email on create label page and verify for email prompt message (outline example : | true | Click Change to provide the sender’s email address. | is not |  | false | 200 Hopmeadow St |)" time="0.000939">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

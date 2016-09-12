@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="My presets" skipped="0" tests="1" time="0.002253">
+<testcase classname="My presets" name="Start With Preset from Create Label page (outline example : | qa_test_01 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail | Signature Confirmation |)" time="0.002253">
+  <failure message="failed Start With Preset from Create Label page (outline example : | qa_test_01 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail | Signature Confirmation |)" type="failed">
+    <![CDATA[Scenario Outline: Start With Preset from Create Label page
+
+Example row: | qa_test_01 | Priority Mail Boxes | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail | Signature Confirmation |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/my_presets/start_with_preset_createlabel_page.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="My presets" skipped="7" tests="8" time="0.028331">
+<testcase classname="My presets" name="Create label from homepage using preset for Priority mail flat box (outline example : | new_test_00 | Priority Mail Flat Rate Boxes | Priority Mail Medium Box | Priority Mail ® Medium Box | Priority Mail | Certified Mail | 14.75 |)" time="0.003815">
+  <failure message="failed Create label from homepage using preset for Priority mail flat box (outline example : | new_test_00 | Priority Mail Flat Rate Boxes | Priority Mail Medium Box | Priority Mail ® Medium Box | Priority Mail | Certified Mail | 14.75 |)" type="failed">
+    <![CDATA[Scenario Outline: Create label from homepage using preset for Priority mail flat box
+
+Example row: | new_test_00 | Priority Mail Flat Rate Boxes | Priority Mail Medium Box | Priority Mail ® Medium Box | Priority Mail | Certified Mail | 14.75 |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/my_presets/create_label_from_presets_on_home_page.feature:7:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from homepage using preset for Priority mail flat box (outline example : | new_test_01 | Priority Mail Flat Rate Boxes | Priority Mail Small Box | Priority Mail ® Small Box | Priority Mail | Signature Confirmation | 7.7 |)" time="0.003512">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from homepage using preset for Priority mail flat box (outline example : | new_test_02 | Priority Mail Flat Rate Boxes | Priority Mail Large Box | Priority Mail ® Large Box | Priority Mail | Collect On Delivery | 15.80 |)" time="0.002638">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from homepage using preset for Priority mail express medium flat box (outline example : | new_test_03 | Priority Mail Express Medium Box | Priority Mail Express™ Medium Flat Rate Box | Priority Mail Express | 44.95 |)" time="0.002373">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from homepage using preset for My Large box (outline example : | new_test_10 | Large Package | 27 | 18 | 22 | 41 | 13.0 | Priority Mail | Certified Mail | 27.88 | Large Box |)" time="0.004778">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from homepage using preset for calculated shipping options (outline example : | new_test_11 | My Boxes | Small Package | 40 | 5.0 | Library Mail | Collect On Delivery | 29.04 | 5 days | Small Box |)" time="0.003809">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from homepage using preset for calculated shipping options (outline example : | new_test_12 | My Large Envelopes | Thin / Flat Large Envelope | 12 | 11.0 | Media Mail | Insurance | 10.43 | 5 days | Thin / Flat Large Envelope |)" time="0.004041">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="My presets" name="Create label from homepage using preset for calculated shipping options (outline example : | new_test_13 | My Large Envelopes | Thick / Rigid Large Envelope | 20 | 10.0 | Media Mail | Collect On Delivery | 19.97 | 5 days | Thick / Rigid Large Envelope |)" time="0.003365">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

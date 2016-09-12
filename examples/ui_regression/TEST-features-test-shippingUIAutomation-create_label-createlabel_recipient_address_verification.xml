@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Recipient Address Verification." skipped="6" tests="7" time="0.052893">
+<testcase classname="Recipient Address Verification." name="Verify Suggested address" time="0.004754">
+  <failure message="failed Verify Suggested address" type="failed">
+    <![CDATA[Scenario: Verify Suggested address
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Address Book page
+And on Address Book page I import addresses with overwrite from contacts_for_address_verification.csv
+And I navigate to Create Label page and select Priority Mail Boxes packages
+And on Create label page I click on select recipient address
+When on Create label page I select recipient address to verify as Suggested from contacts_for_address_verification.csv
+And on the create label page I click on Recipient's Accept and Verify button
+Then on verify address page I see correct address as Suggested
+And on the create label page I click on Use Suggested button
+And on Create Label page I verify entered recipient address for Suggested and used as suggested
+And on the create label page I see that address was verified
+And on create label page I select Priority Mail Flat Rate Boxes as package type
+And on create label page I select Priority Mail Small Box as package type
+And on the create label page I select Priority Mail as shipping service
+Then I verify that Print label button is active
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/createlabel_recipient_address_verification.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Recipient Address Verification." name="Select valid address" time="0.003015">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Recipient Address Verification." name="Select Enhanced address" time="0.031403">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Recipient Address Verification." name="Select Original or Suggested address: use suggested" time="0.003852">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Recipient Address Verification." name="Select Original or Suggested address: use original" time="0.003389">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Recipient Address Verification." name="Select Military Address" time="0.002480">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Recipient Address Verification." name="Select VLL address" time="0.004000">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

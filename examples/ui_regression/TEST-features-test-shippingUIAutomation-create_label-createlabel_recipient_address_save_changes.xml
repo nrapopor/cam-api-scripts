@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Save changes to recipient address." skipped="3" tests="4" time="0.006919">
+<testcase classname="Save changes to recipient address." name="Edit full name, email and save changes (outline example : | Jack Roberts | Full Name | Jackie Chan |)" time="0.002021">
+  <failure message="failed Edit full name, email and save changes (outline example : | Jack Roberts | Full Name | Jackie Chan |)" type="failed">
+    <![CDATA[Scenario Outline: Edit full name, email and save changes
+
+Example row: | Jack Roberts | Full Name | Jackie Chan |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/createlabel_recipient_address_save_changes.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Save changes to recipient address." name="Edit full name, email and save changes (outline example : | Jack Sawyer | Email | Horizon_Shipping@pb.com |)" time="0.001618">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Save changes to recipient address." name="Edit company name save changes (outline example : | Warren Buffet | Company | Microsoft |)" time="0.001619">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Save changes to recipient address." name="Edit zip code and save changes (outline example : | Tom Hanks | Zip Code | 06484-4035 |)" time="0.001661">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Refund Reports and verify" skipped="15" tests="16" time="0.057557">
+<testcase classname="Refund Reports and verify" name="Select Refunds Report (outline example : | Recent |)" time="0.001248">
+  <failure message="failed Select Refunds Report (outline example : | Recent |)" type="failed">
+    <![CDATA[Scenario Outline: Select Refunds Report
+
+Example row: | Recent |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/reports/reportspage_refunds.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Select Refunds Report (outline example : | Today |)" time="0.000710">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Select Refunds Report (outline example : | Last Week |)" time="0.000704">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Select Refunds Report (outline example : | Last Month |)" time="0.001025">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Request for refund and verify in refund report" time="0.004048">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Request refund for Large envelopes" time="0.033876">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Negative Test - Request for refund twice and verify in refund report" time="0.004740">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Refund report - Column Sorting (outline example : | Default | Default |)" time="0.001464">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Refund report - Column Sorting (outline example : | Date | asc |)" time="0.001264">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Refund report - Column Sorting (outline example : | Status | asc |)" time="0.001128">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Refund report - Column Sorting (outline example : | Carrier | asc |)" time="0.001165">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Refund report - Column Sorting (outline example : | Amount | asc |)" time="0.001149">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Refund report - Column Sorting (outline example : | Date | desc |)" time="0.001510">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Refund report - Column Sorting (outline example : | Status | desc |)" time="0.001173">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Refund report - Column Sorting (outline example : | Carrier | desc |)" time="0.001195">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Refund Reports and verify" name="Refund report - Column Sorting (outline example : | Amount | desc |)" time="0.001158">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

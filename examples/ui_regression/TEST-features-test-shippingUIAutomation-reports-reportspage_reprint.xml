@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Reprint Label" skipped="2" tests="3" time="0.007559">
+<testcase classname="Reprint Label" name="Reprint Label from Reports page" time="0.003122">
+  <failure message="failed Reprint Label from Reports page" type="failed">
+    <![CDATA[Scenario: Reprint Label from Reports page
+
+Given Login as horizon_engra3@pb.com
+When create a shipping label with unique name
+And I navigate to Shipping and Postage history page
+And on the Report page I select the Report Date Range as "Recent"
+And on the Report page I select first transaction
+And on selected recent transaction I click Reprint Label
+And on the reprint dialogue I accept the condition
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/reports/reportspage_reprint.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Reprint Label" name="Negative Test - Try to Reprint Label multiple times from Reports page" time="0.003152">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Reprint Label" name="Reprint Label with Media Mail from Reports page" time="0.001285">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Print shipping label from address book page" skipped="1" tests="2" time="0.005765">
+<testcase classname="Print shipping label from address book page" name="I select address on Address Book page and click on print shipping label" time="0.003358">
+  <failure message="failed I select address on Address Book page and click on print shipping label" type="failed">
+    <![CDATA[Scenario: I select address on Address Book page and click on print shipping label
+
+Given Login as horizon_engra3@pb.com
+Given I navigate to Address Book page
+And on Address Book page I import addresses with overwrite from import_addressbook_for_search.csv
+And on Address Book page I select contact by name as Oleg Frontendovich2
+And on Address Book page I click on Print Shipping Label button at the details view
+Then on Create Label page I verify recipient address data entered with name
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/create_label_print_label_from_address_book.feature:4:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Print shipping label from address book page" name="I select sender address on Address Book page and click on print shipping label" time="0.002407">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Field validation for recipient" skipped="9" tests="10" time="0.043069">
+<testcase classname="Field validation for recipient" name="I verify error messages for incorrect input data (outline example : | Zip Code | wrong zip | A valid US ZIP code is required (ex. 06810) |)" time="0.029558">
+  <failure message="failed I verify error messages for incorrect input data (outline example : | Zip Code | wrong zip | A valid US ZIP code is required (ex. 06810) |)" type="failed">
+    <![CDATA[Scenario Outline: I verify error messages for incorrect input data
+
+Example row: | Zip Code | wrong zip | A valid US ZIP code is required (ex. 06810) |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/create_label_recipient_field_validation.feature:5:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for recipient" name="I verify error messages for incorrect input data (outline example : | City | w | City must be at least 3 characters long |)" time="0.001748">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for recipient" name="I verify error messages for incorrect input data (outline example : | Address1 | w | Address must be at least 3 characters long |)" time="0.001854">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for recipient" name="I verify error messages for incorrect input data (outline example : | Email | 123 | Enter a valid email address |)" time="0.001372">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for recipient" name="I verify error messages for Empty fields (outline example : | Address1 | asd | Name or company is required |)" time="0.001334">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for recipient" name="I verify error messages for Empty fields (outline example : | Address1 | asd | Company or name is required |)" time="0.001139">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for recipient" name="I verify error messages for Empty fields (outline example : | Address1 | asd | City is required |)" time="0.002102">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for recipient" name="I verify error messages for Empty fields (outline example : | Address1 | asd | State is required |)" time="0.001595">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for recipient" name="I verify error messages for Empty fields (outline example : | Address1 | asd | Zip code is required |)" time="0.000976">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Field validation for recipient" name="I verify error messages for Empty fields (outline example : | Full Name | asd | Address is required |)" time="0.001391">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

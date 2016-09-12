@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Re-print shipping label." skipped="0" tests="1" time="0.038372">
+<testcase classname="Re-print shipping label." name="reprint shipping label" time="0.038372">
+  <failure message="failed reprint shipping label" type="failed">
+    <![CDATA[Scenario: reprint shipping label
+
+Given Login as horizon_engra3@pb.com
+And I navigate to Create Label page and select Priority Mail Boxes packages
+When on the create label page I verify default senders address
+And on the create label page I enter Valid Recipient Address
+And on the create label page I click on Recipient's Accept and Verify button
+Then on the create label page I see that address was verified
+And on create label page I select Priority Mail Flat Rate Boxes as package type
+And on create label page I select Priority Mail Small Box as package type
+And on the create label page I select Priority Mail as shipping service
+And on create label page I click on Print Label button
+And I enters credentials for gpp service
+And on gpp service I make screenshot of shipping label
+And from gpp tab I switch to Create Label tab
+And on create label page I click on reprint shipping label button
+And on create label page I confirm reprinting shipping label
+And on create label page I switch to newly opened GPP tab
+Then I verify that new shipping label was created
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/createlabel_reprint_shipping_label.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

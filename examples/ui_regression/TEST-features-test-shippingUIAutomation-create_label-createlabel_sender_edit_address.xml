@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Create Label Edit Sender Address" skipped="5" tests="6" time="0.013968">
+<testcase classname="Create Label Edit Sender Address" name="Edit default Sender address (outline example : | true | Pitney Bowes | 37 Executive Dr | Danbury | 06810 | Horizon_user1@pb.com | 21C | CT |)" time="0.005679">
+  <failure message="failed Edit default Sender address (outline example : | true | Pitney Bowes | 37 Executive Dr | Danbury | 06810 | Horizon_user1@pb.com | 21C | CT |)" type="failed">
+    <![CDATA[Scenario Outline: Edit default Sender address
+
+Example row: | true | Pitney Bowes | 37 Executive Dr | Danbury | 06810 | Horizon_user1@pb.com | 21C | CT |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/createlabel_sender_edit_address.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create Label Edit Sender Address" name="Edit company name of Sender address (outline example : | true | Company | Pitney Bowes | 200 Hopmeadow St |)" time="0.001544">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create Label Edit Sender Address" name="Edit Zip code and street of Sender address (outline example : | true | Address1 | 19 Kings Rd | 200 Hopmeadow St |)" time="0.001489">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create Label Edit Sender Address" name="Edit Zip code and street of Sender address (outline example : | true | Zip Code | 06089-9792 | 200 Hopmeadow St |)" time="0.001376">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create Label Edit Sender Address" name="Edit full name and email of Sender address (outline example : | true | 200 Hopmeadow St | Email | Fuming.ye@pb.com |)" time="0.001930">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Create Label Edit Sender Address" name="Edit full name and email of Sender address (outline example : | true | 200 Hopmeadow St | Full Name | Winona Ryder |)" time="0.001950">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

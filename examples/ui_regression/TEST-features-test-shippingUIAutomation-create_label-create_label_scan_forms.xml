@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="As a user I want to produce a USPS Scan form" skipped="7" tests="8" time="0.061894">
+<testcase classname="As a user I want to produce a USPS Scan form" name="Enable SCAN form printing from settings and verify for Print SCAN form in Print menu (outline example : | true | is |)" time="0.000847">
+  <failure message="failed Enable SCAN form printing from settings and verify for Print SCAN form in Print menu (outline example : | true | is |)" type="failed">
+    <![CDATA[Scenario Outline: Enable SCAN form printing from settings and verify for Print SCAN form in Print menu
+
+Example row: | true | is |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/create_label_scan_forms.feature:5:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to produce a USPS Scan form" name="Enable SCAN form printing from settings and verify for Print SCAN form in Print menu (outline example : | false | is not |)" time="0.002576">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to produce a USPS Scan form" name="Print scan form" time="0.004600">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to produce a USPS Scan form" name="Print scan form with out shipments and verify for &quot;Print&quot; button" time="0.003901">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to produce a USPS Scan form" name="Print scan form for international address" time="0.036995">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to produce a USPS Scan form" name="Print scan form for military address" time="0.003022">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to produce a USPS Scan form" name="Print label and return label and verify scan form for only label" time="0.007921">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to produce a USPS Scan form" name="Turn used feature flags to default" time="0.002032">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

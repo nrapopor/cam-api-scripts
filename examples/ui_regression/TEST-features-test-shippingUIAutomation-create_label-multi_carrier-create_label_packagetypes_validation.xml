@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Select package type." skipped="41" tests="42" time="0.135080">
+<testcase classname="Select package type." name="Unnamed scenario (outline example : | false |)" time="0.000344">
+  <failure message="failed Unnamed scenario (outline example : | false |)" type="failed">
+    <![CDATA[Scenario Outline: Unnamed scenario
+
+Example row: | false |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/multi_carrier/create_label_packagetypes_validation.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate package types" time="0.033828">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Boxes package types" time="0.006217">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Flat Rate Boxes available shipping services (outline example : | Small Flat Rate Box | is | is not |)" time="0.001686">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Flat Rate Boxes available shipping services (outline example : | Medium Flat Rate Box | is | is not |)" time="0.000917">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Flat Rate Boxes available shipping services (outline example : | Large Flat Rate Box | is | is not |)" time="0.001026">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Express Medium Box package types" time="0.003561">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Regional Box available shipping services (outline example : | Priority Mail Region A Box | 7 | 8 | is |)" time="0.001370">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Regional Box available shipping services (outline example : | Priority Mail Region B Box | 17 | 9 | is |)" time="0.001357">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Regional Box available shipping services (outline example : | Priority Mail Region C Box | 20 | 5 | is |)" time="0.001663">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Regional Box weight error messages (outline example : | Priority Mail Region A Box | 15 | 9 | The maximum weight is 15 lb. |)" time="0.001345">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Regional Box weight error messages (outline example : | Priority Mail Region B Box | 20 | 6 | The maximum weight is 20 lb. |)" time="0.001328">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Regional Box weight error messages (outline example : | Priority Mail Region C Box | 25 | 9 | The maximum weight is 25 lb. |)" time="0.001355">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Military Box package types (outline example : | is |)" time="0.000637">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Envelopes package types" time="0.005533">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Flat Rate Envelopes available shipping services (outline example : | Regular Flat Rate Envelope |)" time="0.001042">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Flat Rate Envelopes available shipping services (outline example : | Legal Flat Rate Envelope |)" time="0.000637">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Flat Rate Envelopes available shipping services (outline example : | Padded Flat Rate Envelope |)" time="0.000615">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Express Flat Rate Envelopes available shipping services (outline example : | Regular Express Flat Rate Envelope | is not | is |)" time="0.001230">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Express Flat Rate Envelopes available shipping services (outline example : | Legal Express Flat Rate Envelope | is not | is |)" time="0.000864">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Priority Mail Express Flat Rate Envelopes available shipping services (outline example : | Padded Express Flat Rate Envelope | is not | is |)" time="0.000866">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate My Box or envelope package types" time="0.003621">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate available shipping services for Box (outline example : | 17 | 8 | 5 | 6 | 11 | is | is not |)" time="0.003304">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate available shipping services for Box (outline example : | 6 | 3 | 5 | 0 | 12 | is | is |)" time="0.002104">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Irregular Package available shipping services (outline example : | 17 | 8 | 7 | 6 | 8 | 13 | is | is not |)" time="0.033167">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Irregular Package available shipping services (outline example : | 16 | 9 | 6 | 9 | 0 | 4 | is | is |)" time="0.002149">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Box dimensions and weights error messages (outline example : | 17 | 9 | 5 | 99 | 11 | The maximum weight is 70 lb. |)" time="0.001982">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Box dimensions and weights error messages (outline example : | 9 | 7 | 2 | 6 | 11 | The minimum height is 4 in. |)" time="0.001940">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Box dimensions and weights error messages (outline example : | 9 | 7 | 42 | 6 | 11 | The maximum height is 41 in.&#10;Length should be the largest dimension. |)" time="0.002002">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Irregular Package dimensions and weights error messages (outline example : | 124 | 8 | 5 | 9 | 6 | 11 | The maximum length is 123.5 in.&#10;The maximum combined dimensions are 130 in. (length + 2 x height + 2 x width) |)" time="0.002128">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Irregular Package dimensions and weights error messages (outline example : | 55 | 45 | 9 | 9 | 6 | 11 | The maximum width is 41 in. |)" time="0.001847">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Irregular Package dimensions and weights error messages (outline example : | 24 | 8 | 7 | 9 | 0 | 0 | Weight is required. |)" time="0.001813">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Irregular Package dimensions and weights error messages (outline example : | 2 | 8 | 7 | 9 | 9 | 9 | The minimum length is 6 in. &#10;Length should be the largest dimension. |)" time="0.002008">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Irregular Package dimensions and weights error messages (outline example : | 6 | 0 | 5 | 9 | 9 | 9 | Width is required. |)" time="0.001737">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Thin/Flat Large Envelope available shipping services (outline example : | 0 | 8 | is | is |)" time="0.001461">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Thin/Flat Large Envelope available shipping services (outline example : | 12 | 8 | is | is not |)" time="0.001014">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Thick/Rigid Large Envelope available shipping services (outline example : | 0 | 11 | is | is |)" time="0.001407">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Thick/Rigid Large Envelope available shipping services (outline example : | 12 | 8 | is | is not |)" time="0.000653">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Thin Envelope weight error messages (outline example : | 70 | 11 | The maximum weight is 70 lb. |)" time="0.000878">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate Thin Envelope weight error messages (outline example : | 68 | 35 | Ounces must be less than 16. |)" time="0.001247">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate disabling hide postage for thin large envelope first class and media class (outline example : | First Class |)" time="0.000954">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Select package type." name="Validate disabling hide postage for thin large envelope first class and media class (outline example : | Media Mail |)" time="0.000243">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="As a user I want to type ahead recipient address" skipped="10" tests="11" time="0.042869">
+<testcase classname="As a user I want to type ahead recipient address" name="Import address book as background data for typeahead verification (outline example : | import_addressbook_for_search.csv |)" time="0.000336">
+  <failure message="failed Import address book as background data for typeahead verification (outline example : | import_addressbook_for_search.csv |)" type="failed">
+    <![CDATA[Scenario Outline: Import address book as background data for typeahead verification
+
+Example row: | import_addressbook_for_search.csv |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/create_lable_typeahead_address.feature:5:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to type ahead recipient address" name="I enter search query into full name/company fields for Recipient (outline example : | Full Name | test | 2 |)" time="0.001872">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to type ahead recipient address" name="I enter search query into full name/company fields for Recipient (outline example : | Full Name | tar | 1 |)" time="0.001902">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to type ahead recipient address" name="I enter search query into full name/company fields for Recipient (outline example : | Full Name | frontendovich | 3 |)" time="0.001847">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to type ahead recipient address" name="I enter search query into full name/company fields for Recipient (outline example : | Company | pitney | 3 |)" time="0.001603">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to type ahead recipient address" name="I enter search query into full name/company fields for Recipient (outline example : | Company | bowes | 2 |)" time="0.001659">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to type ahead recipient address" name="I enter search query into full name/company fields for Recipient (outline example : | Company | pit | 3 |)" time="0.001465">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to type ahead recipient address" name="I enter search query into full name/company fields for Recipient (outline example : | Full Name | te | 0 |)" time="0.027293">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to type ahead recipient address" name="I enter search query into full name/company fields for Recipient (outline example : | Company | pi | 0 |)" time="0.001818">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to type ahead recipient address" name="I enter search query into full name/company fields for Recipient (outline example : | Company | oleg | 1 |)" time="0.001638">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="As a user I want to type ahead recipient address" name="I enter search query into full name/company fields for Recipient (outline example : | Full Name | cogniance | 1 |)" time="0.001436">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

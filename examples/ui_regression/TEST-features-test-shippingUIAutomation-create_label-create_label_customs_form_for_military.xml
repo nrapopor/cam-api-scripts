@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Custom forms for Military addresses" skipped="7" tests="8" time="0.063977">
+<testcase classname="Custom forms for Military addresses" name="Print Military label with customs (outline example : | 3 | 0 | Gifts | item1 |  | NOEEI 30.36 - Shipments destined to Canada |  |)" time="0.006434">
+  <failure message="failed Print Military label with customs (outline example : | 3 | 0 | Gifts | item1 |  | NOEEI 30.36 - Shipments destined to Canada |  |)" type="failed">
+    <![CDATA[Scenario Outline: Print Military label with customs
+
+Example row: | 3 | 0 | Gifts | item1 |  | NOEEI 30.36 - Shipments destined to Canada |  |
+
+Message:
+]]>
+    <![CDATA[Unable to locate element: {"method":"id","selector":"username"} (Selenium::WebDriver::Error::NoSuchElementError)
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:10667:in `FirefoxDriver.prototype.findElementInternal_'
+[remote server] file:///var/folders/f6/pbn__5hs3957gbdzr0tb2jqc00007q/T/webdriver-profile20151020-44651-148gwo2/extensions/fxdriver@googlecode.com/components/driver-component.js:623:in `fxdriver.Timer.prototype.setTimeout/<.notify'
+./features/pages/sign_in_page.rb:34:in `enter_email_address'
+./features/step_definitions/sign_in_page_steps.rb:26:in `/^I enter my user ID as "(.*?)"$/'
+./features/step_definitions/sign_in_page_steps.rb:11:in `/^Login as (.*)$/'
+features/test/shippingUIAutomation/create_label/create_label_customs_form_for_military.feature:6:in `Given Login as horizon_engra3@pb.com']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Custom forms for Military addresses" name="Print Military label with customs (outline example : | 3 | 0 | Commercial Sample | item1 | 123456 | NOEEI 30.37(h) - Authorized shipment of gift parcels or humanitarian donations |  |)" time="0.002680">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Custom forms for Military addresses" name="Print Military label with customs (outline example : | 3 | 0 | Documents | item1 |  | NOEEI 30.37(a) - Value of each class of goods is $2,500 or less |  |)" time="0.001833">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Custom forms for Military addresses" name="Print Military label with customs (outline example : | 3 | 0 | Merchandise | item1 |  | No exemption, specify ITN | AESDOWN 123456778 02/25/2015 |)" time="0.002883">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Custom forms for Military addresses" name="Print Military label with customs (outline example : | 3 | 0 | Returned Goods | item1 |  | Other exemptions, please specify | NOEEI 30.2d |)" time="0.003187">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Custom forms for Military addresses" name="Add 3 items to customs" time="0.035070">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Custom forms for Military addresses" name="Edit item" time="0.007795">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+<testcase classname="Custom forms for Military addresses" name="Delete item" time="0.004095">
+  <skipped/>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>
