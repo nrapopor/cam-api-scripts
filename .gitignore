@@ -1,4 +1,10 @@
+./reports
+reports
 ./reports/*
+reports/*
 ./config/*.server
+config/*.server
 ./config/*.session.*
+config/*.session.*
 ./config/*.sessions
+config/*.sessions
