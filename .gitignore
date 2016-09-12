@@ -1,4 +1,5 @@
-./reports/*
-./config/*.server
-./config/*.session.*
-./config/*.sessions
+reports
+reports/*
+config/*.server
+config/*.session.*
+config/*.sessions
